@@ -9,7 +9,7 @@
 import XCTest
 @testable import Bowlingure
 
-class BowlingureTests: XCTestCase {
+class GameTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,7 +20,7 @@ class BowlingureTests: XCTestCase {
     }
 
     func testGameMaximumFrames() {
-        
+        XCTAssertEqual(Game.maximumFrameCount, 10)
     }
     
 

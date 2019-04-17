@@ -13,7 +13,7 @@ class Frame {
     static let maxiumPinsCount = 10
     
     private(set) var ballKnockedDownRecord = [Int]()
-    private var state: FrameState?
+    private(set) var state: FrameState?
     
     func setState(_ state: FrameState) {
         self.state = state

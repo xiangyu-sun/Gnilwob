@@ -7,11 +7,14 @@
 //
 
 import XCTest
+@testable import Bowlingure
+
 
 class FrameTests: XCTestCase {
-
+    var frame: Frame!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        frame = Frame()
     }
 
     override func tearDown() {
@@ -19,26 +22,27 @@ class FrameTests: XCTestCase {
     }
     
     func testGameMaximumBallsPerFrame() {
-        
+       XCTAssertEqual(Frame.maximumBallCount, 2)
     }
     
+    func testMaximumPinCountPerFrame() {
+       XCTAssertEqual(Frame.maxiumPinsCount, 10)
+    }
     func testNewFrame() {
         
     }
     
     func testStrike() {
-        
+       XCTAssertTrue(frame.state is StrikeState)
     }
     
     func testSpare() {
-        
+       XCTAssertTrue(frame.state is SpareState)
     }
     
     func testMissed() {
-        
+       XCTAssertTrue(frame.state is MissedState)
     }
     
-    func testMaximumPinCountPerFrame() {
-        
-    }
+
 }
