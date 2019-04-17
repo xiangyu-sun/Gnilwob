@@ -28,15 +28,18 @@ struct Scorer {
     }
     
     
-    mutating func rolledWith(pinsKnockedDown: Int) -> [Int] {
+    mutating func rolledWith(pinsKnockedDown: UInt) -> [UInt] {
         if gameIsOver {
             game = Game()
         }
+        
+        game.rolledWith(pinsKnockedDown: pinsKnockedDown)
+        
         return calculateScore(frames: game.completedFrames)
     }
     
     
-    private func calculateScore(frames: [Frame]) -> [Int] {
+    private func calculateScore(frames: [Frame]) -> [UInt] {
         return []
     }
 }

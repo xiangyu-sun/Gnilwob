@@ -9,36 +9,49 @@
 import Foundation
 
 class Frame {
-    static let maximumBallCount = 2
-    static let maxiumPinsCount = 10
+    static let maximumBallCount: UInt = 2
+    static let maxiumPinsCount: UInt = 10
     
-    private(set) var ballKnockedDownRecord = [Int]()
-    private(set) var state: FrameState?
+    fileprivate var ballKnockedDownRecord = [UInt]()
+    fileprivate var state: FrameState?
     
     var isCompleted: Bool {
         guard let state = self.state, !(state is FirstBallRolledState) else { return false }
         return true
     }
     
-    func setState(_ state: FrameState) {
-        self.state = state
+    var pinsLeft: UInt {
+        return Frame.maxiumPinsCount - (ballKnockedDownRecord.first ?? 0)
     }
     
-    func getStrikeState() -> StrikeState {
+    func addPinsKnockedDown(_ count: UInt) {
+        if state == nil {
+            state = count == Frame.maxiumPinsCount ? getStrikeState() : getFirstBallRolledState()
+        }
+        state?.addPinsKnockedDown(count)
+    }
+    
+    
+    fileprivate func getFirstBallRolledState() -> FirstBallRolledState {
+        return FirstBallRolledState(self)
+    }
+    
+    fileprivate func getStrikeState() -> StrikeState {
         return StrikeState(self)
     }
     
-    func getSpareState() -> SpareState {
+    fileprivate func getSpareState() -> SpareState {
         return SpareState(self)
     }
     
-    func getMissedState() -> MissedState {
+    fileprivate func getMissedState() -> MissedState {
         return MissedState(self)
     }
 }
 
 protocol FrameState {
     init(_ frame: Frame)
+    func addPinsKnockedDown(_ count: UInt)
 }
 
 class StrikeState: FrameState {
@@ -48,7 +61,28 @@ class StrikeState: FrameState {
         self.frame = frame
     }
     
+    func addPinsKnockedDown(_ count: UInt) {
+        guard frame?.ballKnockedDownRecord.count == 0 else { return }
+        frame?.ballKnockedDownRecord.append(count)
+    }
+}
+
+class FirstBallRolledState: FrameState {
+    private weak var frame: Frame?
     
+    required init(_ frame: Frame) {
+        self.frame = frame
+    }
+    
+    func addPinsKnockedDown(_ count: UInt) {
+        if frame?.ballKnockedDownRecord.count == 0 {
+            frame?.ballKnockedDownRecord.append(count)
+        } else if count == frame?.pinsLeft {
+            frame?.state = frame?.getSpareState()
+        } else {
+            frame?.state = frame?.getMissedState()
+        }
+    }
 }
 
 class SpareState: FrameState {
@@ -56,6 +90,10 @@ class SpareState: FrameState {
     
     required init(_ frame: Frame) {
         self.frame = frame
+    }
+    
+    func addPinsKnockedDown(_ count: UInt) {
+        // end of frame
     }
 }
 
@@ -66,12 +104,8 @@ class MissedState: FrameState {
     required init(_ frame: Frame) {
         self.frame = frame
     }
-}
-
-class FirstBallRolledState: FrameState {
-    private weak var frame: Frame?
     
-    required init(_ frame: Frame) {
-        self.frame = frame
+    func addPinsKnockedDown(_ count: UInt) {
+        // end of frame
     }
 }

@@ -28,4 +28,11 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.completedFrames.count, 2)
     }
     
+    func testGameStopWhenReachMaxiumFrame() {
+        game.rolledWith(pinsKnockedDown: 9)
+        XCTAssertEqual(game.frames.count, Int(Game.maximumFrameCount))
+        game.rolledWith(pinsKnockedDown: 9)
+        XCTAssertEqual(game.frames.count, Int(Game.maximumFrameCount))
+    }
+    
 }
