@@ -10,9 +10,9 @@ import XCTest
 @testable import Bowlingure
 
 class GameTests: XCTestCase {
-
+    var game: Game!
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        game = Game()
     }
 
     override func tearDown() {
@@ -23,5 +23,9 @@ class GameTests: XCTestCase {
         XCTAssertEqual(Game.maximumFrameCount, 10)
     }
     
-
+    func testCompletedFrameWhenOneisIncomplete() {
+        XCTAssertEqual(game.frames.count, 3)
+        XCTAssertEqual(game.completedFrames.count, 2)
+    }
+    
 }

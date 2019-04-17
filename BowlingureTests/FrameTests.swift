@@ -28,8 +28,9 @@ class FrameTests: XCTestCase {
     func testMaximumPinCountPerFrame() {
        XCTAssertEqual(Frame.maxiumPinsCount, 10)
     }
+    
     func testNewFrame() {
-        
+        XCTAssertNil(frame.state)
     }
     
     func testStrike() {

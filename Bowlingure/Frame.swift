@@ -15,6 +15,11 @@ class Frame {
     private(set) var ballKnockedDownRecord = [Int]()
     private(set) var state: FrameState?
     
+    var isCompleted: Bool {
+        guard let state = self.state, !(state is FirstBallRolledState) else { return false }
+        return true
+    }
+    
     func setState(_ state: FrameState) {
         self.state = state
     }
@@ -56,6 +61,14 @@ class SpareState: FrameState {
 
 
 class MissedState: FrameState {
+    private weak var frame: Frame?
+    
+    required init(_ frame: Frame) {
+        self.frame = frame
+    }
+}
+
+class FirstBallRolledState: FrameState {
     private weak var frame: Frame?
     
     required init(_ frame: Frame) {

@@ -41,10 +41,10 @@ class ScorerTests: XCTestCase {
     func testRollBallOnGameoverSHouldTriggerANewGame() {
         XCTAssertTrue(scorer.frameNumber == "10")
         let scores1 = scorer.rolledWith(pinsKnockedDown: 8)
-        XCTAssertEqual(scores1.count, 10)
+        XCTAssertEqual(scores1, [1,2,3,4,5])
         XCTAssertTrue(scorer.frameNumber == "1")
-        scorer.rolledWith(pinsKnockedDown: 8)
-        XCTAssertEqual(scores1.count, 1)
+        let scores = scorer.rolledWith(pinsKnockedDown: 8)
+        XCTAssertEqual(scores, [1])
         XCTAssertTrue(scorer.frameNumber == "2")
     }
     

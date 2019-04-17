@@ -9,18 +9,18 @@
 import Foundation
 
 struct Scorer {
-    let game: Game
+    private(set) var game: Game
     
     var frameNumber: String {
         return String(describing: game.nextFrameNumber)
     }
     
     var gameIsOver: Bool {
-        return false
+        return game.isGameover
     }
     
     var scoreSoFar: String {
-        return ""
+        return String(describing: calculateScore(frames: game.frames).reduce(0, +))
     }
     
     init() {
@@ -28,7 +28,15 @@ struct Scorer {
     }
     
     
-    func rolledWith(pinsKnockedDown: Int) -> [Int] {
-        return [0]
+    mutating func rolledWith(pinsKnockedDown: Int) -> [Int] {
+        if gameIsOver {
+            game = Game()
+        }
+        return calculateScore(frames: game.completedFrames)
+    }
+    
+    
+    private func calculateScore(frames: [Frame]) -> [Int] {
+        return []
     }
 }
