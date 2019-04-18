@@ -13,7 +13,8 @@ class Frame {
     static let maxiumPinsCount: UInt = 10
     
     fileprivate var ballKnockedDownRecord = [UInt]()
-    fileprivate var state: FrameState?
+    fileprivate(set) var state: FrameState?
+    weak var scoringFrame: Frame?
     
     var isCompleted: Bool {
         guard let state = self.state, !(state is FirstBallRolledState) else { return false }
@@ -25,12 +26,8 @@ class Frame {
     }
     
     func addPinsKnockedDown(_ count: UInt) {
-        if state == nil {
-            state = count == Frame.maxiumPinsCount ? getStrikeState() : getFirstBallRolledState()
-        }
         state?.addPinsKnockedDown(count)
     }
-    
     
     fileprivate func getFirstBallRolledState() -> FirstBallRolledState {
         return FirstBallRolledState(self)
@@ -51,10 +48,15 @@ class Frame {
 
 protocol FrameState {
     init(_ frame: Frame)
+    var calcualtedScore: UInt { get }
     func addPinsKnockedDown(_ count: UInt)
 }
 
 class StrikeState: FrameState {
+    var calcualtedScore: UInt {
+        return 1
+    }
+    
     private weak var frame: Frame?
     
     required init(_ frame: Frame) {
@@ -68,6 +70,10 @@ class StrikeState: FrameState {
 }
 
 class FirstBallRolledState: FrameState {
+    var calcualtedScore: UInt {
+        return 1
+    }
+    
     private weak var frame: Frame?
     
     required init(_ frame: Frame) {
@@ -86,6 +92,10 @@ class FirstBallRolledState: FrameState {
 }
 
 class SpareState: FrameState {
+    var calcualtedScore: UInt {
+        return 1
+    }
+    
     private weak var frame: Frame?
     
     required init(_ frame: Frame) {
@@ -99,6 +109,10 @@ class SpareState: FrameState {
 
 
 class MissedState: FrameState {
+    var calcualtedScore: UInt {
+        return 1
+    }
+    
     private weak var frame: Frame?
     
     required init(_ frame: Frame) {

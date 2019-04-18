@@ -13,14 +13,6 @@ struct Game {
     
     private(set) var frames = [Frame]()
     
-    private var currentFrame: Frame {
-        if let currentFrame = frames.last {
-            return currentFrame
-        }
-        let frame = Frame()
-        return frame
-    }
-
     var completedFrames: [Frame] {
         return frames.filter{ $0.isCompleted }
     }
@@ -35,12 +27,18 @@ struct Game {
     
     mutating func rolledWith(pinsKnockedDown: UInt) {
         guard !isGameover else { return }
-        
-        if currentFrame.isCompleted {
-            frames.append(Frame())
+
+        if frames.isEmpty || frames.last?.isCompleted == true {
+            let newFrame = Frame()
+            
+            if frames.last?.state is StrikeState || frames.last?.state is SpareState{
+                frames.last?.scoringFrame = newFrame
+            }
+            
+            frames.append(newFrame)
         }
         
-        currentFrame.addPinsKnockedDown(pinsKnockedDown)
+        frames.last?.addPinsKnockedDown(pinsKnockedDown)
     }
 
 }
