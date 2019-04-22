@@ -18,6 +18,7 @@
 		465E09B122677C8100A7245F /* FrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E09B022677C8100A7245F /* FrameTests.swift */; };
 		465E09B322678AB200A7245F /* Scorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E09B222678AB200A7245F /* Scorer.swift */; };
 		465E09B5226790EB00A7245F /* ScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E09B4226790EB00A7245F /* ScorerTests.swift */; };
+		46E70EBB226E1514006A8877 /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E70EBA226E1514006A8877 /* IntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		465E09B022677C8100A7245F /* FrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTests.swift; sourceTree = "<group>"; };
 		465E09B222678AB200A7245F /* Scorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorer.swift; sourceTree = "<group>"; };
 		465E09B4226790EB00A7245F /* ScorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorerTests.swift; sourceTree = "<group>"; };
+		46E70EBA226E1514006A8877 /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				465E09A1226778B200A7245F /* GameTests.swift */,
 				465E09B022677C8100A7245F /* FrameTests.swift */,
 				465E09B4226790EB00A7245F /* ScorerTests.swift */,
+				46E70EBA226E1514006A8877 /* IntegrationTests.swift */,
 				465E09A3226778B200A7245F /* Info.plist */,
 			);
 			path = BowlingureTests;
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E70EBB226E1514006A8877 /* IntegrationTests.swift in Sources */,
 				465E09B5226790EB00A7245F /* ScorerTests.swift in Sources */,
 				465E09A2226778B200A7245F /* GameTests.swift in Sources */,
 				465E09B122677C8100A7245F /* FrameTests.swift in Sources */,

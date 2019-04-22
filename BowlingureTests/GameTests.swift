@@ -15,10 +15,6 @@ class GameTests: XCTestCase {
         game = Game()
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testGameMaximumFrames() {
         XCTAssertEqual(Game.maximumFrameCount, 10)
     }
@@ -26,7 +22,7 @@ class GameTests: XCTestCase {
     func testCompletedFrameWhenOneFrameIncomplete() {
         game.rolledWith(pinsKnockedDownSequence: [10, 3, 7, 7])
         XCTAssertEqual(game.frames.count, 3)
-        XCTAssertEqual(game.completedFrames.count, 2)
+        XCTAssertEqual(game.completelyScoredFames.count, 2)
     }
     
     func testGameStopWhenReachMaxiumFrame() {

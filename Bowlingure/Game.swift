@@ -13,8 +13,8 @@ struct Game {
     
     private(set) var frames = [Frame]()
     
-    var completedFrames: [Frame] {
-        return frames.filter{ $0.isCompleted }
+    var completelyScoredFames: [Frame] {
+        return frames.filter{ $0.isCompletelyScored }
     }
     
     var nextBallFrameNumber: UInt {

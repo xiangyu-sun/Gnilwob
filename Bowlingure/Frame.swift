@@ -21,8 +21,11 @@ class Frame {
     }
     
     var isCompleted: Bool {
-        guard let state = self.state, !(state is FirstBallRolledState) else { return false }
-        return true
+        return state?.isFrameCompleted ?? false
+    }
+    
+    var isCompletelyScored: Bool {
+       return state?.canBeScored ?? false
     }
     
     var pinsLeft: UInt {
@@ -55,11 +58,21 @@ class Frame {
 
 protocol FrameState {
     init(_ frame: Frame)
+    var isFrameCompleted: Bool { get }
+    var canBeScored: Bool { get }
     var calcualtedScore: UInt { get }
     func addPinsKnockedDown(_ count: UInt)
 }
 
 class StrikeState: FrameState {
+    var canBeScored: Bool {
+        return (frame?.scoringFrame?.state != nil && !(frame?.scoringFrame?.state is FirstBallRolledState))
+    }
+    
+    var isFrameCompleted: Bool {
+        return true
+    }
+    
     var calcualtedScore: UInt {
         var frames = frame?.ballKnockedDownRecord
         frames?.append(contentsOf: frame?.scoringFrame?.ballKnockedDownRecord ?? [])
@@ -79,6 +92,15 @@ class StrikeState: FrameState {
 }
 
 class FirstBallRolledState: FrameState {
+    
+    var canBeScored: Bool {
+        return false
+    }
+    
+    var isFrameCompleted: Bool {
+        return false
+    }
+    
     var calcualtedScore: UInt {
         return frame?.ballKnockedDownRecord.first ?? 0
     }
@@ -94,13 +116,24 @@ class FirstBallRolledState: FrameState {
             frame?.ballKnockedDownRecord.append(count)
         } else if count == frame?.pinsLeft {
             frame?.state = frame?.getSpareState()
+            frame?.state?.addPinsKnockedDown(count)
         } else {
             frame?.state = frame?.getMissedState()
+            frame?.state?.addPinsKnockedDown(count)
         }
     }
 }
 
 class SpareState: FrameState {
+    
+    var canBeScored: Bool {
+        return frame?.scoringFrame?.state != nil
+    }
+    
+    var isFrameCompleted: Bool {
+        return true
+    }
+    
     var calcualtedScore: UInt {
         var frames = frame?.ballKnockedDownRecord
         frames?.append(frame?.scoringFrame?.ballKnockedDownRecord.first ?? 0)
@@ -114,12 +147,21 @@ class SpareState: FrameState {
     }
     
     func addPinsKnockedDown(_ count: UInt) {
-        // end of frame
+        frame?.ballKnockedDownRecord.append(count)
     }
 }
 
 
 class MissedState: FrameState {
+    
+    var canBeScored: Bool {
+        return true
+    }
+    
+    var isFrameCompleted: Bool {
+        return true
+    }
+    
     var calcualtedScore: UInt {
         return frame?.ballKnockedDownRecord.reduce(0, +) ?? 0
     }
@@ -131,6 +173,6 @@ class MissedState: FrameState {
     }
     
     func addPinsKnockedDown(_ count: UInt) {
-        // end of frame
+        frame?.ballKnockedDownRecord.append(count)
     }
 }

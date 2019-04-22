@@ -35,7 +35,7 @@ struct Scorer {
         
         game.rolledWith(pinsKnockedDown: pinsKnockedDown)
         
-        return calculateScore(frames: game.completedFrames)
+        return calculateScore(frames: game.completelyScoredFames)
     }
     
     @discardableResult

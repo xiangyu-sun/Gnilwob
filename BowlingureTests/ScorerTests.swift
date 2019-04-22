@@ -17,9 +17,6 @@ class ScorerTests: XCTestCase {
         
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
     
     func testScoreOverWhentItsOver() {
         scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
@@ -48,19 +45,24 @@ class ScorerTests: XCTestCase {
         XCTAssertEqual(frameScore, [])
     }
     
-    func testFirstCompleteRollShouldReturnOneScoreArray() {
+    func testStrikeWithoutTwoSubsequentialBallCanNotBeScored() {
         let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10])
-        XCTAssertEqual(frameScore, [10])
+        XCTAssertEqual(frameScore, [0])
     }
     
-    func testTwoCompleteRollShouldReturnTwoScoreArray() {
+    func testFirstStrikeSecondSpareRollShouldReturnOneScore() {
         let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10, 2, 8])
-        XCTAssertEqual(frameScore, [20, 10])
+        XCTAssertEqual(frameScore, [20])
+    }
+    
+    func testFirstStrikeSecondMissRollShouldReturnTwoScore() {
+        let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10, 2, 7])
+        XCTAssertEqual(frameScore, [19, 9])
     }
     
     func testRollBallOnGameoverSHouldTriggerANewGame() {
-        let scores1 = scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
-        XCTAssertEqual(scores1, [1,2,3,4,5])
+        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
+        XCTAssertEqual(scorer.frameNumber, "10")
         scorer.rolledWith(pinsKnockedDown: 8)
         XCTAssertEqual(scorer.frameNumber, "1")
     }
