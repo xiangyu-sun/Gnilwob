@@ -47,7 +47,7 @@ class ScorerTests: XCTestCase {
     
     func testStrikeWithoutTwoSubsequentialBallCanNotBeScored() {
         let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10])
-        XCTAssertEqual(frameScore, [0])
+        XCTAssertEqual(frameScore, [])
     }
     
     func testFirstStrikeSecondSpareRollShouldReturnOneScore() {
@@ -57,7 +57,7 @@ class ScorerTests: XCTestCase {
     
     func testFirstStrikeSecondMissRollShouldReturnTwoScore() {
         let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10, 2, 7])
-        XCTAssertEqual(frameScore, [19, 9])
+        XCTAssertEqual(frameScore, [19, 28])
     }
     
     func testRollBallOnGameoverSHouldTriggerANewGame() {

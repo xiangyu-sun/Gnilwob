@@ -20,7 +20,7 @@ struct Scorer {
     }
     
     var scoreSoFar: String {
-        return String(describing: calculateScore(frames: game.frames).reduce(0, +))
+        return String(describing: game.frames.mapToScores.sum())
     }
     
     init() {
@@ -35,7 +35,7 @@ struct Scorer {
         
         game.rolledWith(pinsKnockedDown: pinsKnockedDown)
         
-        return calculateScore(frames: game.completelyScoredFames)
+        return cuculativeScores(frames: game.completelyScoredFames)
     }
     
     @discardableResult
@@ -43,7 +43,7 @@ struct Scorer {
         return pinsKnockedDownSequence.compactMap { self.rolledWith(pinsKnockedDown: $0) }.last ?? []
     }
     
-    private func calculateScore(frames: [Frame]) -> [UInt] {
-        return frames.map { $0.calcualtedScore }
+    private func cuculativeScores(frames: [Frame]) -> [UInt] {
+        return frames.enumerated().map { frames[...$0.0].mapToScores.sum()}
     }
 }

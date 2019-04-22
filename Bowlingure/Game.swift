@@ -46,3 +46,16 @@ struct Game {
         pinsKnockedDownSequence.forEach{ self.rolledWith(pinsKnockedDown: $0) }
     }
 }
+
+extension Array where Element == Frame {
+    var mapToScores: [UInt] {
+        return map{ $0.calcualtedScore }
+    }
+}
+
+extension ArraySlice where Element == Frame {
+    var mapToScores: [UInt] {
+        return map{ $0.calcualtedScore }
+    }
+}
+

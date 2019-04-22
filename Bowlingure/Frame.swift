@@ -76,7 +76,7 @@ class StrikeState: FrameState {
     var calcualtedScore: UInt {
         var frames = frame?.ballKnockedDownRecord
         frames?.append(contentsOf: frame?.scoringFrame?.ballKnockedDownRecord ?? [])
-        return frames?.reduce(0, +) ?? 0
+        return frames?.sum() ?? 0
     }
     
     fileprivate weak var frame: Frame?
@@ -137,7 +137,7 @@ class SpareState: FrameState {
     var calcualtedScore: UInt {
         var frames = frame?.ballKnockedDownRecord
         frames?.append(frame?.scoringFrame?.ballKnockedDownRecord.first ?? 0)
-        return frames?.reduce(0, +) ?? 0
+        return frames?.sum() ?? 0
     }
     
     private weak var frame: Frame?
@@ -163,7 +163,7 @@ class MissedState: FrameState {
     }
     
     var calcualtedScore: UInt {
-        return frame?.ballKnockedDownRecord.reduce(0, +) ?? 0
+        return frame?.ballKnockedDownRecord.sum() ?? 0
     }
     
     private weak var frame: Frame?
