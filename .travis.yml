@@ -1,3 +1,3 @@
 language: objective-c
 xcode_project: Bowlingure.xcodeproj
-xcode_scheme: BowlingureTests
+xcode_scheme: Bowlingure
