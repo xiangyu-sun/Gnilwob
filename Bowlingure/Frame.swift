@@ -71,8 +71,9 @@ class StrikeState: FrameState {
     var ballsForScoring: [UInt]? {
         var frames = frame?.ballKnockedDownRecord
         frames?.append(contentsOf: frame?.scoringFrame?.ballKnockedDownRecord ?? [])
-        if frames?.count != 3 {
-            frames?.append(contentsOf: frame?.scoringFrame?.scoringFrame?.ballKnockedDownRecord ?? [])
+        let ballsCount = frames?.filter{ $0 != 0 }.count ?? 0
+        if ballsCount < 3, let firstBallOfNextFrame = frame?.scoringFrame?.scoringFrame?.ballKnockedDownRecord.first {
+            frames?.append(firstBallOfNextFrame)
         }
         return frames
     }

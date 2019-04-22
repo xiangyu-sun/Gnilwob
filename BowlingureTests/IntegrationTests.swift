@@ -16,6 +16,6 @@ class IntegrationTests: XCTestCase {
     }
 
     func testSample() {
-        XCTAssertEqual(scorer.rolledWith(pinsKnockedDownSequence: [9 ,1, 0, 10, 10, 10, 6, 2, 7, 3, 8, 2, 10, 9, 0, 10]), [10, 30, 48, 56, 74, 94, 113, 122])
+        XCTAssertEqual(scorer.rolledWith(pinsKnockedDownSequence: [9 ,1, 0, 10, 10, 10, 6, 2, 7, 3, 8, 2, 10, 9, 0, 10]), [10, 30, 56, 74, 82, 100, 120, 139, 148])
     }
 }

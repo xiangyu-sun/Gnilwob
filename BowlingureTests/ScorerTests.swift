@@ -67,5 +67,9 @@ class ScorerTests: XCTestCase {
         XCTAssertEqual(scorer.frameNumber, "1")
     }
     
+    func testTwoStrikesScoreCalculation() {
+        let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10, 10, 6, 4])
+        XCTAssertEqual(frameScore, [26, 46])
+    }
 
 }
