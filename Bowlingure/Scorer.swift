@@ -12,7 +12,7 @@ struct Scorer {
     private(set) var game: Game
     
     var frameNumber: String {
-        return String(describing: game.nextFrameNumber)
+        return String(describing: game.nextBallFrameNumber)
     }
     
     var gameIsOver: Bool {
@@ -27,7 +27,7 @@ struct Scorer {
         self.game = Game()
     }
     
-    
+    @discardableResult
     mutating func rolledWith(pinsKnockedDown: UInt) -> [UInt] {
         if gameIsOver {
             game = Game()
@@ -38,8 +38,12 @@ struct Scorer {
         return calculateScore(frames: game.completedFrames)
     }
     
+    @discardableResult
+    mutating func rolledWith(pinsKnockedDownSequence: [UInt]) -> [UInt] {
+        return pinsKnockedDownSequence.compactMap { self.rolledWith(pinsKnockedDown: $0) }.last ?? []
+    }
     
     private func calculateScore(frames: [Frame]) -> [UInt] {
-        return []
+        return frames.map { $0.calcualtedScore }
     }
 }

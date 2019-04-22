@@ -17,8 +17,9 @@ struct Game {
         return frames.filter{ $0.isCompleted }
     }
     
-    var nextFrameNumber: UInt {
-        return min(Game.maximumFrameCount, UInt(frames.count) + 1)
+    var nextBallFrameNumber: UInt {
+        let currentFrameDelta: UInt = (frames.last?.isCompleted ?? false) ? 1 : 0
+        return min(Game.maximumFrameCount, UInt(frames.count) + currentFrameDelta)
     }
     
     var isGameover: Bool {
@@ -40,5 +41,8 @@ struct Game {
         
         frames.last?.addPinsKnockedDown(pinsKnockedDown)
     }
-
+    
+    mutating func rolledWith(pinsKnockedDownSequence: [UInt]) {
+        pinsKnockedDownSequence.forEach{ self.rolledWith(pinsKnockedDown: $0) }
+    }
 }

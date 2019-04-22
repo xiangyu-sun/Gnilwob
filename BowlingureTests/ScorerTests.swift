@@ -21,31 +21,48 @@ class ScorerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testScoreOver() {
+    func testScoreOverWhentItsOver() {
+        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
         XCTAssertTrue(scorer.gameIsOver)
     }
     
+    func testScoreOverWhentItsNotOver() {
+        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 1))
+        XCTAssertFalse(scorer.gameIsOver)
+    }
+    
     func testScoreSofar() {
-        XCTAssertTrue(scorer.scoreSoFar == "123")
+        scorer.rolledWith(pinsKnockedDownSequence: [10, 2, 3, 8])
+        XCTAssertEqual(scorer.scoreSoFar, "28")
     }
     
     func testFrameNumber() {
-        XCTAssertTrue(scorer.frameNumber == "2")
+        scorer.rolledWith(pinsKnockedDown: 9)
+        XCTAssertEqual(scorer.frameNumber, "1")
+        scorer.rolledWith(pinsKnockedDown: 1)
+        XCTAssertEqual(scorer.frameNumber, "2")
     }
     
-    func testFirstRoll() {
+    func testFirstRollShouldReturnEmptyScoreArray() {
         let frameScore = scorer.rolledWith(pinsKnockedDown: 8)
-        XCTAssertEqual(frameScore, [8])
+        XCTAssertEqual(frameScore, [])
+    }
+    
+    func testFirstCompleteRollShouldReturnOneScoreArray() {
+        let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10])
+        XCTAssertEqual(frameScore, [10])
+    }
+    
+    func testTwoCompleteRollShouldReturnTwoScoreArray() {
+        let frameScore = scorer.rolledWith(pinsKnockedDownSequence: [10, 2, 8])
+        XCTAssertEqual(frameScore, [20, 10])
     }
     
     func testRollBallOnGameoverSHouldTriggerANewGame() {
-        XCTAssertTrue(scorer.frameNumber == "10")
-        let scores1 = scorer.rolledWith(pinsKnockedDown: 8)
+        let scores1 = scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
         XCTAssertEqual(scores1, [1,2,3,4,5])
-        XCTAssertTrue(scorer.frameNumber == "1")
-        let scores = scorer.rolledWith(pinsKnockedDown: 8)
-        XCTAssertEqual(scores, [1])
-        XCTAssertTrue(scorer.frameNumber == "2")
+        scorer.rolledWith(pinsKnockedDown: 8)
+        XCTAssertEqual(scorer.frameNumber, "1")
     }
     
 

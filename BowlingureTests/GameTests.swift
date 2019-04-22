@@ -23,13 +23,14 @@ class GameTests: XCTestCase {
         XCTAssertEqual(Game.maximumFrameCount, 10)
     }
     
-    func testCompletedFrameWhenOneisIncomplete() {
+    func testCompletedFrameWhenOneFrameIncomplete() {
+        game.rolledWith(pinsKnockedDownSequence: [10, 3, 7, 7])
         XCTAssertEqual(game.frames.count, 3)
         XCTAssertEqual(game.completedFrames.count, 2)
     }
     
     func testGameStopWhenReachMaxiumFrame() {
-        game.rolledWith(pinsKnockedDown: 9)
+        game.rolledWith(pinsKnockedDownSequence: [10, 3, 7, 7, 0, 10, 4, 6, 2, 3, 10, 2, 8, 10, 3, 5])
         XCTAssertEqual(game.frames.count, Int(Game.maximumFrameCount))
         game.rolledWith(pinsKnockedDown: 9)
         XCTAssertEqual(game.frames.count, Int(Game.maximumFrameCount))

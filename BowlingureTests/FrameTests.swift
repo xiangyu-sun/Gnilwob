@@ -16,17 +16,17 @@ class FrameTests: XCTestCase {
     override func setUp() {
         frame = Frame()
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
     func testGameMaximumBallsPerFrame() {
-       XCTAssertEqual(Frame.maximumBallCount, 2)
+        XCTAssertEqual(Frame.maximumBallCount, 2)
     }
     
     func testMaximumPinCountPerFrame() {
-       XCTAssertEqual(Frame.maxiumPinsCount, 10)
+        XCTAssertEqual(Frame.maxiumPinsCount, 10)
     }
     
     func testNewFrame() {
@@ -34,16 +34,21 @@ class FrameTests: XCTestCase {
     }
     
     func testStrike() {
-       XCTAssertTrue(frame.state is StrikeState)
+        frame.addPinsKnockedDown(10)
+        XCTAssertTrue(frame.state is StrikeState)
     }
     
     func testSpare() {
-       XCTAssertTrue(frame.state is SpareState)
+        frame.addPinsKnockedDown(3)
+        frame.addPinsKnockedDown(7)
+        XCTAssertTrue(frame.state is SpareState)
     }
     
     func testMissed() {
-       XCTAssertTrue(frame.state is MissedState)
+        frame.addPinsKnockedDown(2)
+        frame.addPinsKnockedDown(3)
+        XCTAssertTrue(frame.state is MissedState)
     }
     
-
+    
 }
