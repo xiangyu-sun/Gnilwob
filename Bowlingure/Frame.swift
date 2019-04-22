@@ -58,15 +58,27 @@ class Frame {
 
 protocol FrameState {
     init(_ frame: Frame)
+    
     var isFrameCompleted: Bool { get }
     var canBeScored: Bool { get }
     var calcualtedScore: UInt { get }
+    var ballsForScoring: [UInt]? { get }
+    
     func addPinsKnockedDown(_ count: UInt)
 }
 
 class StrikeState: FrameState {
+    var ballsForScoring: [UInt]? {
+        var frames = frame?.ballKnockedDownRecord
+        frames?.append(contentsOf: frame?.scoringFrame?.ballKnockedDownRecord ?? [])
+        if frames?.count != 3 {
+            frames?.append(contentsOf: frame?.scoringFrame?.scoringFrame?.ballKnockedDownRecord ?? [])
+        }
+        return frames
+    }
+    
     var canBeScored: Bool {
-        return (frame?.scoringFrame?.state != nil && !(frame?.scoringFrame?.state is FirstBallRolledState))
+        return ballsForScoring?.count == 3
     }
     
     var isFrameCompleted: Bool {
@@ -74,9 +86,7 @@ class StrikeState: FrameState {
     }
     
     var calcualtedScore: UInt {
-        var frames = frame?.ballKnockedDownRecord
-        frames?.append(contentsOf: frame?.scoringFrame?.ballKnockedDownRecord ?? [])
-        return frames?.sum() ?? 0
+        return ballsForScoring?.sum() ?? 0
     }
     
     fileprivate weak var frame: Frame?
@@ -92,6 +102,9 @@ class StrikeState: FrameState {
 }
 
 class FirstBallRolledState: FrameState {
+    var ballsForScoring: [UInt]? {
+        return nil
+    }
     
     var canBeScored: Bool {
         return false
@@ -126,8 +139,16 @@ class FirstBallRolledState: FrameState {
 
 class SpareState: FrameState {
     
+    var ballsForScoring: [UInt]? {
+        var frames = frame?.ballKnockedDownRecord
+        if let firstBallOfNextFrame = frame?.scoringFrame?.ballKnockedDownRecord.first {
+            frames?.append(firstBallOfNextFrame)
+        }
+        return frames
+    }
+    
     var canBeScored: Bool {
-        return frame?.scoringFrame?.state != nil
+        return ballsForScoring?.count == 3
     }
     
     var isFrameCompleted: Bool {
@@ -135,9 +156,7 @@ class SpareState: FrameState {
     }
     
     var calcualtedScore: UInt {
-        var frames = frame?.ballKnockedDownRecord
-        frames?.append(frame?.scoringFrame?.ballKnockedDownRecord.first ?? 0)
-        return frames?.sum() ?? 0
+        return ballsForScoring?.sum() ?? 0
     }
     
     private weak var frame: Frame?
@@ -154,8 +173,12 @@ class SpareState: FrameState {
 
 class MissedState: FrameState {
     
+    var ballsForScoring: [UInt]? {
+        return frame?.ballKnockedDownRecord
+    }
+    
     var canBeScored: Bool {
-        return true
+        return ballsForScoring?.count == 2
     }
     
     var isFrameCompleted: Bool {
@@ -163,7 +186,7 @@ class MissedState: FrameState {
     }
     
     var calcualtedScore: UInt {
-        return frame?.ballKnockedDownRecord.sum() ?? 0
+        return ballsForScoring?.sum() ?? 0
     }
     
     private weak var frame: Frame?
