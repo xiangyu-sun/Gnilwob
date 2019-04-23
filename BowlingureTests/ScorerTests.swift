@@ -19,7 +19,7 @@ class ScorerTests: XCTestCase {
     
     
     func testScoreOverWhentItsOver() {
-        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
+        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 12))
         XCTAssertTrue(scorer.gameIsOver)
     }
     
@@ -61,7 +61,7 @@ class ScorerTests: XCTestCase {
     }
     
     func testRollBallOnGameoverSHouldTriggerANewGame() {
-        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 10))
+        scorer.rolledWith(pinsKnockedDownSequence: [UInt].init(repeating: 10, count: 12))
         XCTAssertEqual(scorer.frameNumber, "10")
         scorer.rolledWith(pinsKnockedDown: 8)
         XCTAssertEqual(scorer.frameNumber, "1")

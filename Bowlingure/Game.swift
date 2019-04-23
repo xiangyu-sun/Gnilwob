@@ -23,14 +23,14 @@ struct Game {
     }
     
     var isGameover: Bool {
-        return frames.count >= Game.maximumFrameCount
+        return completelyScoredFames.count >= Game.maximumFrameCount
     }
     
     mutating func rolledWith(pinsKnockedDown: UInt) {
         guard !isGameover else { return }
 
         if frames.isEmpty || frames.last?.isCompleted == true {
-            let newFrame = Frame()
+            let newFrame = Frame(lastFrame: frames.count == 9)
             
             if frames.last?.state is StrikeState || frames.last?.state is SpareState{
                 frames.last?.scoringFrame = newFrame

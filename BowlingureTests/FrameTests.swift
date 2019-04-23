@@ -18,7 +18,7 @@ class FrameTests: XCTestCase {
     }
     
     func testGameMaximumBallsPerFrame() {
-        XCTAssertEqual(Frame.maximumBallCount, 2)
+        XCTAssertEqual(Frame().state.maximumBallCount, 2)
     }
     
     func testMaximumPinCountPerFrame() {
@@ -26,7 +26,7 @@ class FrameTests: XCTestCase {
     }
     
     func testNewFrame() {
-        XCTAssertNil(frame.state)
+        XCTAssertTrue(frame.state is EmptyState)
     }
     
     func testStrike() {
