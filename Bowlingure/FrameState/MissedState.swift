@@ -8,24 +8,14 @@
 
 import Foundation
 
-final class MissedState: FrameState {
-    var maximumBallCount: UInt {
-        return 2
-    }
+final class MissedState: CompleteFrameState {
+
     var ballsForScoring: [UInt]? {
         return frame?.ballKnockedDownRecord
     }
     
     var canBeScored: Bool {
         return ballsForScoring?.count == 2
-    }
-    
-    var isFrameCompleted: Bool {
-        return true
-    }
-    
-    var calcualtedScore: UInt {
-        return ballsForScoring?.sum() ?? 0
     }
     
     private weak var frame: Frame?

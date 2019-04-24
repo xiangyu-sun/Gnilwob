@@ -20,6 +20,26 @@ protocol FrameState {
     func addPinsKnockedDown(_ count: UInt)
 }
 
+extension FrameState{
+    var maximumBallCount: UInt {
+        return 2
+    }
+    
+    var calcualtedScore: UInt {
+        return ballsForScoring?.sum() ?? 0
+    }
+}
+
+protocol CompleteFrameState: FrameState {
+
+}
+
+extension CompleteFrameState {
+    var isFrameCompleted: Bool {
+        return true
+    }
+}
+
 protocol FinalFrameState: FrameState {
 
 }
@@ -31,10 +51,6 @@ extension FinalFrameState {
     
     var isFrameCompleted: Bool {
         return canBeScored
-    }
-    
-    var calcualtedScore: UInt {
-        return ballsForScoring?.sum() ?? 0
     }
     
     var canBeScored: Bool {

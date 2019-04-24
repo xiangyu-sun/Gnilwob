@@ -10,12 +10,8 @@ import Foundation
 
 final class FirstBallRolledState: FrameState {
     
-    var maximumBallCount: UInt {
-        return 2
-    }
-    
     var ballsForScoring: [UInt]? {
-        return nil
+        return frame?.ballKnockedDownRecord
     }
     
     var canBeScored: Bool {
@@ -24,10 +20,6 @@ final class FirstBallRolledState: FrameState {
     
     var isFrameCompleted: Bool {
         return false
-    }
-    
-    var calcualtedScore: UInt {
-        return frame?.ballKnockedDownRecord.first ?? 0
     }
     
     private weak var frame: Frame?

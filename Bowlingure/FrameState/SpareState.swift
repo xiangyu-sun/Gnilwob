@@ -8,10 +8,8 @@
 
 import Foundation
 
-final class SpareState: FrameState {
-    var maximumBallCount: UInt {
-        return 2
-    }
+final class SpareState: CompleteFrameState {
+
     var ballsForScoring: [UInt]? {
         var frames = frame?.ballKnockedDownRecord
         if let firstBallOfNextFrame = frame?.scoringFrame?.ballKnockedDownRecord.first {
@@ -22,14 +20,6 @@ final class SpareState: FrameState {
     
     var canBeScored: Bool {
         return ballsForScoring?.count == 3
-    }
-    
-    var isFrameCompleted: Bool {
-        return true
-    }
-    
-    var calcualtedScore: UInt {
-        return ballsForScoring?.sum() ?? 0
     }
     
     private weak var frame: Frame?

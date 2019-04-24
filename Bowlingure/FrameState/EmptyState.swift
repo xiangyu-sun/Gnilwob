@@ -9,10 +9,7 @@
 import Foundation
 
 class EmptyState: FrameState {
-    var maximumBallCount: UInt {
-        return 2
-    }
-    
+
     var ballsForScoring: [UInt]? {
         return nil
     }
@@ -23,10 +20,6 @@ class EmptyState: FrameState {
     
     var isFrameCompleted: Bool {
         return false
-    }
-    
-    var calcualtedScore: UInt {
-        return 0
     }
     
     fileprivate weak var frame: Frame?

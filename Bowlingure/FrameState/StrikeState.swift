@@ -8,10 +8,7 @@
 
 import Foundation
 
-final class StrikeState: FrameState {
-    var maximumBallCount: UInt {
-        return 2
-    }
+final class StrikeState: CompleteFrameState {
     
     var ballsForScoring: [UInt]? {
         var frames = frame?.ballKnockedDownRecord
@@ -28,14 +25,6 @@ final class StrikeState: FrameState {
     
     var canBeScored: Bool {
         return ballsForScoring?.count == 3
-    }
-    
-    var isFrameCompleted: Bool {
-        return true
-    }
-    
-    var calcualtedScore: UInt {
-        return ballsForScoring?.sum() ?? 0
     }
     
     fileprivate weak var frame: Frame?
