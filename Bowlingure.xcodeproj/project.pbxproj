@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4649C3D82270909200450460 /* StrikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3D72270909200450460 /* StrikeState.swift */; };
+		4649C3DA227090A600450460 /* LastFrameStrikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3D9227090A600450460 /* LastFrameStrikeState.swift */; };
+		4649C3DC227090BB00450460 /* FirstBallRolledState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3DB227090BB00450460 /* FirstBallRolledState.swift */; };
+		4649C3DE227090D000450460 /* SpareState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3DD227090D000450460 /* SpareState.swift */; };
+		4649C3E2227090FA00450460 /* MissedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3E1227090FA00450460 /* MissedState.swift */; };
+		4649C3E62270916A00450460 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3E52270916A00450460 /* EmptyState.swift */; };
+		4649C3E82270917C00450460 /* FrameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649C3E72270917C00450460 /* FrameState.swift */; };
 		465E098D226778B000A7245F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E098C226778B000A7245F /* AppDelegate.swift */; };
 		465E098F226778B000A7245F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E098E226778B000A7245F /* ViewController.swift */; };
 		465E0992226778B000A7245F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465E0990226778B000A7245F /* Main.storyboard */; };
@@ -33,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4649C3D72270909200450460 /* StrikeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeState.swift; sourceTree = "<group>"; };
+		4649C3D9227090A600450460 /* LastFrameStrikeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFrameStrikeState.swift; sourceTree = "<group>"; };
+		4649C3DB227090BB00450460 /* FirstBallRolledState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBallRolledState.swift; sourceTree = "<group>"; };
+		4649C3DD227090D000450460 /* SpareState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareState.swift; sourceTree = "<group>"; };
+		4649C3E1227090FA00450460 /* MissedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedState.swift; sourceTree = "<group>"; };
+		4649C3E52270916A00450460 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		4649C3E72270917C00450460 /* FrameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameState.swift; sourceTree = "<group>"; };
 		465E0989226778B000A7245F /* Bowlingure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bowlingure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		465E098C226778B000A7245F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		465E098E226778B000A7245F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4649C3E42270915700450460 /* FrameState */ = {
+			isa = PBXGroup;
+			children = (
+				4649C3DB227090BB00450460 /* FirstBallRolledState.swift */,
+				4649C3D72270909200450460 /* StrikeState.swift */,
+				4649C3D9227090A600450460 /* LastFrameStrikeState.swift */,
+				4649C3DD227090D000450460 /* SpareState.swift */,
+				4649C3E1227090FA00450460 /* MissedState.swift */,
+				4649C3E52270916A00450460 /* EmptyState.swift */,
+				4649C3E72270917C00450460 /* FrameState.swift */,
+			);
+			path = FrameState;
+			sourceTree = "<group>";
+		};
 		465E0980226778B000A7245F = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +124,7 @@
 				465E09B222678AB200A7245F /* Scorer.swift */,
 				465E09AC22677A4F00A7245F /* Frame.swift */,
 				465E09AE22677A7700A7245F /* Game.swift */,
+				4649C3E42270915700450460 /* FrameState */,
 				46E70EBC226E21A5006A8877 /* Math.swift */,
 				465E0990226778B000A7245F /* Main.storyboard */,
 				465E0993226778B200A7245F /* Assets.xcassets */,
@@ -223,9 +252,16 @@
 				465E09AD22677A4F00A7245F /* Frame.swift in Sources */,
 				465E098F226778B000A7245F /* ViewController.swift in Sources */,
 				465E09B322678AB200A7245F /* Scorer.swift in Sources */,
+				4649C3E82270917C00450460 /* FrameState.swift in Sources */,
+				4649C3E62270916A00450460 /* EmptyState.swift in Sources */,
 				465E098D226778B000A7245F /* AppDelegate.swift in Sources */,
 				465E09AF22677A7700A7245F /* Game.swift in Sources */,
+				4649C3E2227090FA00450460 /* MissedState.swift in Sources */,
+				4649C3DE227090D000450460 /* SpareState.swift in Sources */,
 				46E70EBD226E21A5006A8877 /* Math.swift in Sources */,
+				4649C3D82270909200450460 /* StrikeState.swift in Sources */,
+				4649C3DC227090BB00450460 /* FirstBallRolledState.swift in Sources */,
+				4649C3DA227090A600450460 /* LastFrameStrikeState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
