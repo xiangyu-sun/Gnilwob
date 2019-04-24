@@ -14,10 +14,6 @@ final class FirstBallRolledState: FrameState {
         return frame?.ballKnockedDownRecord
     }
     
-    var canBeScored: Bool {
-        return false
-    }
-    
     var isFrameCompleted: Bool {
         return false
     }

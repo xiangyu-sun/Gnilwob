@@ -14,10 +14,6 @@ final class MissedState: CompleteFrameState {
         return frame?.ballKnockedDownRecord
     }
     
-    var canBeScored: Bool {
-        return ballsForScoring?.count == 2
-    }
-    
     private weak var frame: Frame?
     
     required init(_ frame: Frame) {

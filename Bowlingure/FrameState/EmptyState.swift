@@ -14,9 +14,6 @@ class EmptyState: FrameState {
         return nil
     }
     
-    var canBeScored: Bool {
-        return false
-    }
     
     var isFrameCompleted: Bool {
         return false

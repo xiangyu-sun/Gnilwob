@@ -12,8 +12,8 @@ final class SpareState: CompleteFrameState {
 
     var ballsForScoring: [UInt]? {
         var frames = frame?.ballKnockedDownRecord
-        if let firstBallOfNextFrame = frame?.getNextBallKnockedDownRecord(count: 1).first {
-            frames?.append(firstBallOfNextFrame)
+        if let firstBallOfNextFrame = frame?.getNextBallKnockedDownRecord(count: 1) {
+            frames?.append(contentsOf: firstBallOfNextFrame)
         }
         return frames
     }
