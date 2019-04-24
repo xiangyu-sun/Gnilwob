@@ -22,16 +22,16 @@ class EmptyState: FrameState {
         return false
     }
     
-    fileprivate weak var frame: Frame?
+    private weak var frame: Frame?
     
     required init(_ frame: Frame) {
         self.frame = frame
     }
     
     func addPinsKnockedDown(_ count: UInt) {
-        if let strikeState: FrameState = frame?.lastFrame == true ? frame?.getFinalFrameStrikeState() : frame?.getStrikeState(), let firstState: FrameState = frame?.getFirstBallRolledState(){
-            frame?.state = count == Frame.maxiumPinsCount ? strikeState : firstState
-            frame?.state.addPinsKnockedDown(count)
+        if let frame = frame{
+            frame.state = count == Frame.maxiumPinsCount ? frame.getStrikeState() : frame.getFirstBallRolledState()
+            frame.state.addPinsKnockedDown(count)
         }
     }
 }

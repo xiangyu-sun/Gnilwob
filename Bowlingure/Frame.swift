@@ -50,27 +50,38 @@ class Frame {
         ballKnockedDownRecord.append(count)
     }
     
-    func getFirstBallRolledState() -> FirstBallRolledState {
+    func getNextBallKnockedDownRecord(count: Int) -> [UInt] {
+        guard let scoringFrame = scoringFrame, count != 0 else { return [] }
+        
+        var allFrames = scoringFrame.ballKnockedDownRecord
+        
+        let ballsKnockDownNeeded = allFrames.count - count
+        
+        if ballsKnockDownNeeded >= 0 {
+            return Array(allFrames[..<count])
+        }
+        
+        guard let scoringFrameAfterNext = scoringFrame.scoringFrame else { return allFrames }
+        let ballsMissed = abs(ballsKnockDownNeeded)
+        
+        
+        allFrames.append(contentsOf: Array(scoringFrameAfterNext.ballKnockedDownRecord[..<ballsMissed]))
+        return allFrames
+    }
+    
+    func getFirstBallRolledState() -> FrameState {
         return FirstBallRolledState(self)
     }
     
-    func getStrikeState() -> StrikeState {
-        return StrikeState(self)
+    func getStrikeState() -> FrameState {
+        return lastFrame ? FinalFrameStrikeState(self) : StrikeState(self)
     }
     
-    func getFinalFrameStrikeState() -> FinalFrameStrikeState {
-        return FinalFrameStrikeState(self)
+    func getSpareState() -> FrameState {
+        return lastFrame ? FinalFrameSpareState(self) : SpareState(self)
     }
     
-    func getSpareState() -> SpareState {
-        return SpareState(self)
-    }
-    
-    func getFinalFrameSpareState() -> FinalFrameSpareState {
-        return FinalFrameSpareState(self)
-    }
-    
-    func getMissedState() -> MissedState {
+    func getMissedState() -> FrameState {
         return MissedState(self)
     }
 }

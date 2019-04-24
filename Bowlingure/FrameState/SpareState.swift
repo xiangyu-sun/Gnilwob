@@ -12,14 +12,14 @@ final class SpareState: CompleteFrameState {
 
     var ballsForScoring: [UInt]? {
         var frames = frame?.ballKnockedDownRecord
-        if let firstBallOfNextFrame = frame?.scoringFrame?.ballKnockedDownRecord.first {
+        if let firstBallOfNextFrame = frame?.getNextBallKnockedDownRecord(count: 1).first {
             frames?.append(firstBallOfNextFrame)
         }
         return frames
     }
     
-    var canBeScored: Bool {
-        return ballsForScoring?.count == 3
+    var ballsRequiredForScoring: UInt {
+        return 3
     }
     
     private weak var frame: Frame?

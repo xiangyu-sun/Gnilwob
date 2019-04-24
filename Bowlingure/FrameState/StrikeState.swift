@@ -11,20 +11,20 @@ import Foundation
 final class StrikeState: CompleteFrameState {
     
     var ballsForScoring: [UInt]? {
-        var frames = frame?.ballKnockedDownRecord
-        frames?.append(contentsOf: frame?.scoringFrame?.ballKnockedDownRecord ?? [])
+        guard let frame = frame else { return nil }
         
-        let ballsCount = frames?.count ?? 0
-        if ballsCount < 3, let firstBallOfNextFrame = frame?.scoringFrame?.scoringFrame?.ballKnockedDownRecord.first {
-            frames?.append(firstBallOfNextFrame)
-        } else if ballsCount > 3 {
-            frames?.removeLast()
+        var frames = frame.ballKnockedDownRecord
+        
+        let ballsMissing = ballsRequiredForScoring - frames.count
+        if ballsMissing > 0 {
+            frames.append(contentsOf: frame.getNextBallKnockedDownRecord(count: ballsMissing))
         }
+
         return frames
     }
     
-    var canBeScored: Bool {
-        return ballsForScoring?.count == 3
+    var ballsRequiredForScoring: UInt {
+        return 3
     }
     
     fileprivate weak var frame: Frame?

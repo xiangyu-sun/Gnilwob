@@ -31,7 +31,7 @@ final class FirstBallRolledState: FrameState {
     func addPinsKnockedDown(_ count: UInt) {
         if frame?.ballKnockedDownRecord.count == 0 {
             frame?.addBallKnockedDownRecord(count: count)
-        } else if count == frame?.pinsLeft, let state: FrameState = frame?.lastFrame == true ? frame?.getFinalFrameSpareState() : frame?.getSpareState(){
+        } else if count == frame?.pinsLeft, let state = frame?.getSpareState(){
             frame?.state = state
             frame?.state.addPinsKnockedDown(count)
         } else if let state: FrameState = frame?.getMissedState(){
