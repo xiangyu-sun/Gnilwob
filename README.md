@@ -1,6 +1,6 @@
 # Bowlingure
 
-[![CI Status](https://img.shields.io/travis/luc.alexander.sun@me.com/Bowlingure.svg?style=flat)](https://travis-ci.org/luc.alexander.sun@me.com/Bowlingure)
+[![CI Status](https://img.shields.io/travis/luc.alexander.sun@me.com/Bowlingure.svg?style=flat)](https://travis-ci.com/xiangyu-sun/Gnilwob.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/Bowlingure.svg?style=flat)](https://cocoapods.org/pods/Bowlingure)
 [![License](https://img.shields.io/cocoapods/l/Bowlingure.svg?style=flat)](https://cocoapods.org/pods/Bowlingure)
 [![Platform](https://img.shields.io/cocoapods/p/Bowlingure.svg?style=flat)](https://cocoapods.org/pods/Bowlingure)
