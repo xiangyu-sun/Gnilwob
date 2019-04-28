@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode10.2
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Bowlingure.xcworkspace -scheme Bowlingure-Example -sdk iphonesimulator12.1 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Bowlingure.xcworkspace -scheme Bowlingure-Example -sdk iphonesimulator12.2 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
