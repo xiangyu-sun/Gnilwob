@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Bowlingure'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A simple Bowling framework'
-  s.swift_version    = '4.2'
+  s.swift_versions   = ['4.2']
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
