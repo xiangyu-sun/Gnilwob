@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Bowlingure
 
-Copyright (c) 2019 luc.alexander.sun@me.com <xiangyu.sun@dnata.com>
+Copyright (c) 2019 luc.alexander.sun@me.com <luc.alexander.sun@me.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

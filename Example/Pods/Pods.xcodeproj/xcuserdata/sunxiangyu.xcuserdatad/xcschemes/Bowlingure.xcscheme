@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62174EA62876F7B533A0B9409F4AC158"
+               BlueprintIdentifier = "7AC54E64EE62B02F7ABDDA740CCB9364"
                BuildableName = "Bowlingure.framework"
                BlueprintName = "Bowlingure"
                ReferencedContainer = "container:Pods.xcodeproj">

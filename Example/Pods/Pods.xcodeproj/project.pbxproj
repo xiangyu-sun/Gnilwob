@@ -7,28 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28C012B589B414AA07C45F73826C5E03 /* StrikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2EF15F61DFE162232975759DFF531 /* StrikeState.swift */; };
-		2BFDF107AB4560D3A922B0FBD983C063 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1513DF8D64186BFCF09BD2A991DD2D0D /* Game.swift */; };
-		34CB15AB46804BD000ED2FCC4572E371 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD1C076735CF849347730C60EBB084 /* EmptyState.swift */; };
-		39122A9262CD745FA5552A65710C4BF4 /* Scorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312235C6D9B9EC41DD5321333D58AF3 /* Scorer.swift */; };
-		434B4871A8E37BE7E9EF795D08A963F6 /* LastFrameStrikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F84A4CBB4A7ED3FA692F171B314A55 /* LastFrameStrikeState.swift */; };
-		54155275C50F9B1B22C4EF89D73045D3 /* Pods-Bowlingure_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B189002039E29781DDA66C625CDBB4 /* Pods-Bowlingure_Tests-dummy.m */; };
-		55AAF12261B2E1102040378B39A92ED4 /* UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEDDA03BA3A7ADDDF17137056303C75 /* UInt.swift */; };
-		56D40877E8502B8DC5A966B9331668F9 /* FirstBallRolledState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154DCFFAF58C787B5EE4CF13218EEA4 /* FirstBallRolledState.swift */; };
-		58A791A1A012D44E29A98CC6B240F7D4 /* FrameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8851995EB8EBFFC2F1604F22EFA2B17 /* FrameState.swift */; };
-		69A18B642E1E291034FE2D184B8571E0 /* Pods-Bowlingure_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C625EF680BC40069997D297E1D0BCB06 /* Pods-Bowlingure_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70FFFBE40BE05B595CA927318A6393D0 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F0F56E2718293888570CC1AD639AB3 /* Frame.swift */; };
-		750E5CEBC8FA5F2D524645C04B67311D /* Pods-Bowlingure_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 035F2FA12BD131E2B41F24988D66C6A9 /* Pods-Bowlingure_Example-dummy.m */; };
-		7D39EBFC9071B0774DFDDD00EB1ED8B7 /* Bowlingure-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BA60CC223C00965BF2C1A10D62D1F7 /* Bowlingure-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		875D41DD28DB032D13229587997D53DA /* Pods-Bowlingure_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FED83C528FEE592B57D7E3FACB3AD445 /* Pods-Bowlingure_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		110DF6C91B7184BDA3F6A350797374C7 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B4D71E5FCB366D6423405E1574B759 /* Math.swift */; };
+		2552A27503405B47E8976B0515F1CF3A /* UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74104EB58CDDA846C1C29933F69DF487 /* UInt.swift */; };
+		2CF3E35E46CA48907A6177E76DA02EDF /* FirstBallRolledState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D729A0A496A7835F659E2999AADE52AD /* FirstBallRolledState.swift */; };
+		30C47AE4E635EAE5A6A5BEF1D9FF3753 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45B6ED3991D15ABD8A922E90BC4A05 /* Frame.swift */; };
+		32C86B9168ECB291317455F64F04D042 /* SpareState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20760B0BECFAA5AD474A24AE83065899 /* SpareState.swift */; };
+		36A56C68DE0820287DF4EAED3E35D135 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431F76674971F112C6F9FA3A7C405A4 /* Game.swift */; };
+		54155275C50F9B1B22C4EF89D73045D3 /* Pods-Bowlingure_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE68110E941B9A19D50A52A3363C0C8 /* Pods-Bowlingure_Tests-dummy.m */; };
+		5934D50AF575588D3696D67A2DCD68E3 /* Bowlingure-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF04857ACD1614EA0E57F14F7E14DD5E /* Bowlingure-dummy.m */; };
+		63157AD4A208BF3F9DCA529697234AB9 /* LastFrameStrikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137A1E2735B46895D73B727F4AC0FF39 /* LastFrameStrikeState.swift */; };
+		68BC2EB090DE02B55AF1D0771A3F0C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		68D01815DBF35635D3AA3B661E3C0383 /* FrameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980FED119BCD4EBD0061CE78B29DB46 /* FrameState.swift */; };
+		69A18B642E1E291034FE2D184B8571E0 /* Pods-Bowlingure_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 687B0D822A714F6EB6D025B183DBAFCD /* Pods-Bowlingure_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		750E5CEBC8FA5F2D524645C04B67311D /* Pods-Bowlingure_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 584B28D2F67C53C1AE302FA260DC7D03 /* Pods-Bowlingure_Example-dummy.m */; };
+		85417A7AD9754F66AD48CA22EDFB6DEA /* MissedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E026E217D47498E7DF94322E65B3AF4 /* MissedState.swift */; };
+		875D41DD28DB032D13229587997D53DA /* Pods-Bowlingure_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9548F3901702C27E6F4A69BFC510988 /* Pods-Bowlingure_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98BADDF51447EAADA416C9FF5A6BF6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A5E4ED8B21880FCE8ADD836AFCDBCADA /* StrikeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEC554456F0FE80DC2399783EBCA44 /* StrikeState.swift */; };
 		AB8767EF0E986F96C13BAC70AD577A56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		B646D477FF59B0B7392FE49BC9FFD63F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C345034FFF4F57FF9439243C3316A1 /* ViewController.swift */; };
-		BB37185C8AABA325C462B7886A15E519 /* MissedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D51479A5A5C417AB3AAF42BBE7B586 /* MissedState.swift */; };
-		D30ACB2E37BA21F7FF8F5D3FD514A15E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		E8DE404BA483EE2CD32858820C361679 /* SpareState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C523060E997A218CD12D1D2781B69 /* SpareState.swift */; };
-		E8F42CA28575132A81A129A328A294BB /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB1C0C1EEDCD3EB858A05112487C02 /* Math.swift */; };
-		F9427F8FBB63E3C04EDE0FC6F60BA0A4 /* Bowlingure-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2733315004F9C517CE4638BBCE006 /* Bowlingure-dummy.m */; };
+		B91F643151B6BD2B1BFF8356B6AC6A53 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501E849E35D81F9C0C9CB78BFA1BA0EA /* EmptyState.swift */; };
+		F3A4E4D5924A528191791DFD95FF3B8D /* Bowlingure-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47377B58B0E1A3E83D10403EBA5C2949 /* Bowlingure-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBA9F112EB76BD13DA9D7B3C09A1612B /* Scorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7854452F090DAB4B643FA2450B5CC6CC /* Scorer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,63 +35,62 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62174EA62876F7B533A0B9409F4AC158;
+			remoteGlobalIDString = 7AC54E64EE62B02F7ABDDA740CCB9364;
 			remoteInfo = Bowlingure;
 		};
 		599B8F4FA6A2DF3AE2FC81950E98C4AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B3D5C56C29525EC6767D4B2FDA04E063;
+			remoteGlobalIDString = 375F5FB091D8C2BCA43E8B188A79432B;
 			remoteInfo = "Pods-Bowlingure_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F0F56E2718293888570CC1AD639AB3 /* Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frame.swift; path = Bowlingure/Classes/Frame.swift; sourceTree = "<group>"; };
 		016DFCF40C18E1B37AEB5A92AA8DD534 /* Pods_Bowlingure_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bowlingure_Tests.framework; path = "Pods-Bowlingure_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		035F2FA12BD131E2B41F24988D66C6A9 /* Pods-Bowlingure_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bowlingure_Example-dummy.m"; sourceTree = "<group>"; };
-		038750FA6EF63568878E79C5D45851EC /* Pods-Bowlingure_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0CA6F9EE71291D368784953DA0FFC060 /* Pods-Bowlingure_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Example-Info.plist"; sourceTree = "<group>"; };
-		11BD1C076735CF849347730C60EBB084 /* EmptyState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
-		1513DF8D64186BFCF09BD2A991DD2D0D /* Game.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Game.swift; path = Bowlingure/Classes/Game.swift; sourceTree = "<group>"; };
-		16DB1C0C1EEDCD3EB858A05112487C02 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Bowlingure/Classes/Math.swift; sourceTree = "<group>"; };
-		18E2733315004F9C517CE4638BBCE006 /* Bowlingure-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bowlingure-dummy.m"; sourceTree = "<group>"; };
-		19F84A4CBB4A7ED3FA692F171B314A55 /* LastFrameStrikeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LastFrameStrikeState.swift; sourceTree = "<group>"; };
+		08B4D71E5FCB366D6423405E1574B759 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Bowlingure/Classes/Math.swift; sourceTree = "<group>"; };
+		09B614359AABE78870165410713EBACC /* Pods-Bowlingure_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bowlingure_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0D6FD634594DD0D17FB6FB18A72EB543 /* Pods-Bowlingure_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bowlingure_Tests.modulemap"; sourceTree = "<group>"; };
+		137A1E2735B46895D73B727F4AC0FF39 /* LastFrameStrikeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LastFrameStrikeState.swift; sourceTree = "<group>"; };
+		1E026E217D47498E7DF94322E65B3AF4 /* MissedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MissedState.swift; sourceTree = "<group>"; };
+		20760B0BECFAA5AD474A24AE83065899 /* SpareState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpareState.swift; sourceTree = "<group>"; };
+		2C5105FED7420F5A562E6129E5D6E754 /* Bowlingure-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bowlingure-prefix.pch"; sourceTree = "<group>"; };
 		2EBF99DA802C4D38F42E6B5645EB7A4F /* Pods_Bowlingure_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bowlingure_Example.framework; path = "Pods-Bowlingure_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4237215AC435ADE928CB48EBF4A70F9E /* Pods-Bowlingure_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		42BDF9E93D1BBD5E0681B58E7F4D118B /* Bowlingure.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bowlingure.xcconfig; sourceTree = "<group>"; };
-		4312235C6D9B9EC41DD5321333D58AF3 /* Scorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scorer.swift; path = Bowlingure/Classes/Scorer.swift; sourceTree = "<group>"; };
-		4B7C523060E997A218CD12D1D2781B69 /* SpareState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpareState.swift; sourceTree = "<group>"; };
-		53F46500930F80FC3751CBC4BA526A9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		598DA05013723F319B49877178020AED /* Pods-Bowlingure_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C39CF9EA48B0A889E20C46C7DC08436 /* Pods-Bowlingure_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bowlingure_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F0181045109C69BF298A1FAC768D3FF /* Bowlingure.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bowlingure.modulemap; sourceTree = "<group>"; };
-		64835905478875636F503520B96C0B60 /* Pods-Bowlingure_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4112DBE32BAD65F049C241763B34478D /* Pods-Bowlingure_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bowlingure_Example.modulemap"; sourceTree = "<group>"; };
+		47377B58B0E1A3E83D10403EBA5C2949 /* Bowlingure-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bowlingure-umbrella.h"; sourceTree = "<group>"; };
+		4C2E1B275C8A8592996A14B898BEEBAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		501E849E35D81F9C0C9CB78BFA1BA0EA /* EmptyState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		584B28D2F67C53C1AE302FA260DC7D03 /* Pods-Bowlingure_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bowlingure_Example-dummy.m"; sourceTree = "<group>"; };
+		61F2E8EB90A1AF6C3DF94886A4661FB4 /* Pods-Bowlingure_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		665436749EF8FFF39067A42BADAC2222 /* Pods-Bowlingure_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		687B0D822A714F6EB6D025B183DBAFCD /* Pods-Bowlingure_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bowlingure_Tests-umbrella.h"; sourceTree = "<group>"; };
+		696FBDA4CBF6133819081EF7DC32BBA3 /* Pods-Bowlingure_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6F99B9FDB5DF367101BDFDF7472DA5CD /* Pods-Bowlingure_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Example.release.xcconfig"; sourceTree = "<group>"; };
+		74104EB58CDDA846C1C29933F69DF487 /* UInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt.swift; path = Bowlingure/Classes/UInt.swift; sourceTree = "<group>"; };
+		745F14A5A167D77AB399C4EB1C9CB499 /* Bowlingure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Bowlingure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7636602D08BEABE7AE138B3351516B0A /* Bowlingure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bowlingure.framework; path = Bowlingure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77B99887A7A1EFE74B86FF832E74FEE1 /* Pods-Bowlingure_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bowlingure_Tests.modulemap"; sourceTree = "<group>"; };
-		7CEE78520151CAA35EC30985DCE73DE0 /* Pods-Bowlingure_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8154DCFFAF58C787B5EE4CF13218EEA4 /* FirstBallRolledState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstBallRolledState.swift; sourceTree = "<group>"; };
-		8364792600BC9C01EBE5110426389FAC /* Pods-Bowlingure_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bowlingure_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DEDDA03BA3A7ADDDF17137056303C75 /* UInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt.swift; path = Bowlingure/Classes/UInt.swift; sourceTree = "<group>"; };
-		90BA60CC223C00965BF2C1A10D62D1F7 /* Bowlingure-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bowlingure-umbrella.h"; sourceTree = "<group>"; };
-		90C930A37A79D95C5555CF052D08A058 /* Pods-Bowlingure_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bowlingure_Example-frameworks.sh"; sourceTree = "<group>"; };
-		91CCCE3B727B70003F7858C6F54FBEF9 /* Pods-Bowlingure_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Tests-Info.plist"; sourceTree = "<group>"; };
-		9477C05C796FEF3CA3BA4DC5C6C8CD6F /* Pods-Bowlingure_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bowlingure_Example.modulemap"; sourceTree = "<group>"; };
+		76AB0536F9CDC417DF7571B572EB5B78 /* Bowlingure.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bowlingure.xcconfig; sourceTree = "<group>"; };
+		7854452F090DAB4B643FA2450B5CC6CC /* Scorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scorer.swift; path = Bowlingure/Classes/Scorer.swift; sourceTree = "<group>"; };
+		80A38329840154F8ADEDE9C5539C35B2 /* Pods-Bowlingure_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8431F76674971F112C6F9FA3A7C405A4 /* Game.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Game.swift; path = Bowlingure/Classes/Game.swift; sourceTree = "<group>"; };
+		895E7A8962CFEECA45A43ECD9A8D8708 /* Bowlingure.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bowlingure.modulemap; sourceTree = "<group>"; };
+		8BE68110E941B9A19D50A52A3363C0C8 /* Pods-Bowlingure_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bowlingure_Tests-dummy.m"; sourceTree = "<group>"; };
+		8D751FAB1FCAACC2F75892D1C43690FB /* Pods-Bowlingure_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bowlingure_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93B521D232FE903E6A46D9814A7E84C1 /* Pods-Bowlingure_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bowlingure_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9980FED119BCD4EBD0061CE78B29DB46 /* FrameState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrameState.swift; sourceTree = "<group>"; };
+		9A45B6ED3991D15ABD8A922E90BC4A05 /* Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frame.swift; path = Bowlingure/Classes/Frame.swift; sourceTree = "<group>"; };
+		9D72FAB85589FC077FEF55C0D84738D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3B189002039E29781DDA66C625CDBB4 /* Pods-Bowlingure_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bowlingure_Tests-dummy.m"; sourceTree = "<group>"; };
-		A4A2EF15F61DFE162232975759DFF531 /* StrikeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrikeState.swift; sourceTree = "<group>"; };
-		A59406C6D87DAB884B316EB6C4200460 /* Bowlingure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Bowlingure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C625EF680BC40069997D297E1D0BCB06 /* Pods-Bowlingure_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bowlingure_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9E04EB4AFDA21D6305D3C7C5D49241D7 /* Pods-Bowlingure_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Example-Info.plist"; sourceTree = "<group>"; };
+		C305322A41566ADD934CFCBE75BD8195 /* Pods-Bowlingure_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Tests-Info.plist"; sourceTree = "<group>"; };
+		C9548F3901702C27E6F4A69BFC510988 /* Pods-Bowlingure_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bowlingure_Example-umbrella.h"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D8851995EB8EBFFC2F1604F22EFA2B17 /* FrameState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrameState.swift; sourceTree = "<group>"; };
-		D8D51479A5A5C417AB3AAF42BBE7B586 /* MissedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MissedState.swift; sourceTree = "<group>"; };
-		DCCF1202E43EE2AC6C506DFA8CB00973 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E5C345034FFF4F57FF9439243C3316A1 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Bowlingure/Classes/ViewController.swift; sourceTree = "<group>"; };
-		EB57B8A692F069EDEF95913013F07454 /* Bowlingure-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bowlingure-Info.plist"; sourceTree = "<group>"; };
-		F156BAA945D7EE7D75EA7464362CC130 /* Pods-Bowlingure_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F237664DF2E86B88F7D0B8DEF8BED742 /* Bowlingure-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bowlingure-prefix.pch"; sourceTree = "<group>"; };
-		FED83C528FEE592B57D7E3FACB3AD445 /* Pods-Bowlingure_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bowlingure_Example-umbrella.h"; sourceTree = "<group>"; };
+		CCCDB019E56ED8E11FAAE7A8F6C840A2 /* Bowlingure-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bowlingure-Info.plist"; sourceTree = "<group>"; };
+		D0906B897AB66B62BCEBB1FFF90015C5 /* Pods-Bowlingure_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2EEC554456F0FE80DC2399783EBCA44 /* StrikeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrikeState.swift; sourceTree = "<group>"; };
+		D729A0A496A7835F659E2999AADE52AD /* FirstBallRolledState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstBallRolledState.swift; sourceTree = "<group>"; };
+		DF04857ACD1614EA0E57F14F7E14DD5E /* Bowlingure-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bowlingure-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +102,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08A72DE29424847E635804B192360026 /* Frameworks */ = {
+		145D14AB68A9CF0D5E024DB51BEFD486 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30ACB2E37BA21F7FF8F5D3FD514A15E /* Foundation.framework in Frameworks */,
+				68BC2EB090DE02B55AF1D0771A3F0C70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +121,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30AE471CEB4EC879C0685FDB672701A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				895E7A8962CFEECA45A43ECD9A8D8708 /* Bowlingure.modulemap */,
+				76AB0536F9CDC417DF7571B572EB5B78 /* Bowlingure.xcconfig */,
+				DF04857ACD1614EA0E57F14F7E14DD5E /* Bowlingure-dummy.m */,
+				CCCDB019E56ED8E11FAAE7A8F6C840A2 /* Bowlingure-Info.plist */,
+				2C5105FED7420F5A562E6129E5D6E754 /* Bowlingure-prefix.pch */,
+				47377B58B0E1A3E83D10403EBA5C2949 /* Bowlingure-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Bowlingure";
+			sourceTree = "<group>";
+		};
+		36425BA191A2932A94A7FCC4085AF9E0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19A28EF326AAD032B5C82185B06E3AE /* Bowlingure */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		481B5796542ADED4BF675D4176DC8276 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,44 +153,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6ED99A7F51EFB33E86D6DE9678394968 /* Support Files */ = {
+		69C832D57769655B483539884F833ECA /* Pods-Bowlingure_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5F0181045109C69BF298A1FAC768D3FF /* Bowlingure.modulemap */,
-				42BDF9E93D1BBD5E0681B58E7F4D118B /* Bowlingure.xcconfig */,
-				18E2733315004F9C517CE4638BBCE006 /* Bowlingure-dummy.m */,
-				EB57B8A692F069EDEF95913013F07454 /* Bowlingure-Info.plist */,
-				F237664DF2E86B88F7D0B8DEF8BED742 /* Bowlingure-prefix.pch */,
-				90BA60CC223C00965BF2C1A10D62D1F7 /* Bowlingure-umbrella.h */,
+				0D6FD634594DD0D17FB6FB18A72EB543 /* Pods-Bowlingure_Tests.modulemap */,
+				8D751FAB1FCAACC2F75892D1C43690FB /* Pods-Bowlingure_Tests-acknowledgements.markdown */,
+				61F2E8EB90A1AF6C3DF94886A4661FB4 /* Pods-Bowlingure_Tests-acknowledgements.plist */,
+				8BE68110E941B9A19D50A52A3363C0C8 /* Pods-Bowlingure_Tests-dummy.m */,
+				C305322A41566ADD934CFCBE75BD8195 /* Pods-Bowlingure_Tests-Info.plist */,
+				687B0D822A714F6EB6D025B183DBAFCD /* Pods-Bowlingure_Tests-umbrella.h */,
+				80A38329840154F8ADEDE9C5539C35B2 /* Pods-Bowlingure_Tests.debug.xcconfig */,
+				696FBDA4CBF6133819081EF7DC32BBA3 /* Pods-Bowlingure_Tests.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Bowlingure";
+			name = "Pods-Bowlingure_Tests";
+			path = "Target Support Files/Pods-Bowlingure_Tests";
+			sourceTree = "<group>";
+		};
+		6C28C0949A6F38D0C9925EEEE63EF8C3 /* Pods-Bowlingure_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4112DBE32BAD65F049C241763B34478D /* Pods-Bowlingure_Example.modulemap */,
+				93B521D232FE903E6A46D9814A7E84C1 /* Pods-Bowlingure_Example-acknowledgements.markdown */,
+				D0906B897AB66B62BCEBB1FFF90015C5 /* Pods-Bowlingure_Example-acknowledgements.plist */,
+				584B28D2F67C53C1AE302FA260DC7D03 /* Pods-Bowlingure_Example-dummy.m */,
+				09B614359AABE78870165410713EBACC /* Pods-Bowlingure_Example-frameworks.sh */,
+				9E04EB4AFDA21D6305D3C7C5D49241D7 /* Pods-Bowlingure_Example-Info.plist */,
+				C9548F3901702C27E6F4A69BFC510988 /* Pods-Bowlingure_Example-umbrella.h */,
+				665436749EF8FFF39067A42BADAC2222 /* Pods-Bowlingure_Example.debug.xcconfig */,
+				6F99B9FDB5DF367101BDFDF7472DA5CD /* Pods-Bowlingure_Example.release.xcconfig */,
+			);
+			name = "Pods-Bowlingure_Example";
+			path = "Target Support Files/Pods-Bowlingure_Example";
 			sourceTree = "<group>";
 		};
 		80207CA9BA03F678FF77EB28DC3A75D6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDD1CC29C2258B19B2470D61C0900086 /* Pods-Bowlingure_Example */,
-				BEFDF253373A6DF2DBFACB7A29A48657 /* Pods-Bowlingure_Tests */,
+				6C28C0949A6F38D0C9925EEEE63EF8C3 /* Pods-Bowlingure_Example */,
+				69C832D57769655B483539884F833ECA /* Pods-Bowlingure_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		88B87F81A3BF3AC01B8D036B985D4732 /* Bowlingure */ = {
-			isa = PBXGroup;
-			children = (
-				00F0F56E2718293888570CC1AD639AB3 /* Frame.swift */,
-				1513DF8D64186BFCF09BD2A991DD2D0D /* Game.swift */,
-				16DB1C0C1EEDCD3EB858A05112487C02 /* Math.swift */,
-				4312235C6D9B9EC41DD5321333D58AF3 /* Scorer.swift */,
-				8DEDDA03BA3A7ADDDF17137056303C75 /* UInt.swift */,
-				E5C345034FFF4F57FF9439243C3316A1 /* ViewController.swift */,
-				C52B6AFE8848AB4C714BCB7523C9C865 /* FrameState */,
-				E11CB8DBD3936838A8BDF4F32EF802E1 /* Pod */,
-				6ED99A7F51EFB33E86D6DE9678394968 /* Support Files */,
-			);
-			name = Bowlingure;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
@@ -181,46 +203,41 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		BEFDF253373A6DF2DBFACB7A29A48657 /* Pods-Bowlingure_Tests */ = {
+		BF3D1611BA550F7DF5740BCF36EDF4B5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				77B99887A7A1EFE74B86FF832E74FEE1 /* Pods-Bowlingure_Tests.modulemap */,
-				8364792600BC9C01EBE5110426389FAC /* Pods-Bowlingure_Tests-acknowledgements.markdown */,
-				4237215AC435ADE928CB48EBF4A70F9E /* Pods-Bowlingure_Tests-acknowledgements.plist */,
-				A3B189002039E29781DDA66C625CDBB4 /* Pods-Bowlingure_Tests-dummy.m */,
-				91CCCE3B727B70003F7858C6F54FBEF9 /* Pods-Bowlingure_Tests-Info.plist */,
-				C625EF680BC40069997D297E1D0BCB06 /* Pods-Bowlingure_Tests-umbrella.h */,
-				F156BAA945D7EE7D75EA7464362CC130 /* Pods-Bowlingure_Tests.debug.xcconfig */,
-				7CEE78520151CAA35EC30985DCE73DE0 /* Pods-Bowlingure_Tests.release.xcconfig */,
+				745F14A5A167D77AB399C4EB1C9CB499 /* Bowlingure.podspec */,
+				9D72FAB85589FC077FEF55C0D84738D5 /* LICENSE */,
+				4C2E1B275C8A8592996A14B898BEEBAE /* README.md */,
 			);
-			name = "Pods-Bowlingure_Tests";
-			path = "Target Support Files/Pods-Bowlingure_Tests";
-			sourceTree = "<group>";
-		};
-		C52B6AFE8848AB4C714BCB7523C9C865 /* FrameState */ = {
-			isa = PBXGroup;
-			children = (
-				11BD1C076735CF849347730C60EBB084 /* EmptyState.swift */,
-				8154DCFFAF58C787B5EE4CF13218EEA4 /* FirstBallRolledState.swift */,
-				D8851995EB8EBFFC2F1604F22EFA2B17 /* FrameState.swift */,
-				19F84A4CBB4A7ED3FA692F171B314A55 /* LastFrameStrikeState.swift */,
-				D8D51479A5A5C417AB3AAF42BBE7B586 /* MissedState.swift */,
-				4B7C523060E997A218CD12D1D2781B69 /* SpareState.swift */,
-				A4A2EF15F61DFE162232975759DFF531 /* StrikeState.swift */,
-			);
-			name = FrameState;
-			path = Bowlingure/Classes/FrameState;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				EC8A71FFB19655D0E32C952F20609566 /* Development Pods */,
+				36425BA191A2932A94A7FCC4085AF9E0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				481B5796542ADED4BF675D4176DC8276 /* Products */,
 				80207CA9BA03F678FF77EB28DC3A75D6 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D19A28EF326AAD032B5C82185B06E3AE /* Bowlingure */ = {
+			isa = PBXGroup;
+			children = (
+				9A45B6ED3991D15ABD8A922E90BC4A05 /* Frame.swift */,
+				8431F76674971F112C6F9FA3A7C405A4 /* Game.swift */,
+				08B4D71E5FCB366D6423405E1574B759 /* Math.swift */,
+				7854452F090DAB4B643FA2450B5CC6CC /* Scorer.swift */,
+				74104EB58CDDA846C1C29933F69DF487 /* UInt.swift */,
+				FA8CC7B1F9C40A6E582A4C4CF54FFB59 /* FrameState */,
+				BF3D1611BA550F7DF5740BCF36EDF4B5 /* Pod */,
+				30AE471CEB4EC879C0685FDB672701A3 /* Support Files */,
+			);
+			name = Bowlingure;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -231,44 +248,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E11CB8DBD3936838A8BDF4F32EF802E1 /* Pod */ = {
+		FA8CC7B1F9C40A6E582A4C4CF54FFB59 /* FrameState */ = {
 			isa = PBXGroup;
 			children = (
-				A59406C6D87DAB884B316EB6C4200460 /* Bowlingure.podspec */,
-				53F46500930F80FC3751CBC4BA526A9D /* LICENSE */,
-				DCCF1202E43EE2AC6C506DFA8CB00973 /* README.md */,
+				501E849E35D81F9C0C9CB78BFA1BA0EA /* EmptyState.swift */,
+				D729A0A496A7835F659E2999AADE52AD /* FirstBallRolledState.swift */,
+				9980FED119BCD4EBD0061CE78B29DB46 /* FrameState.swift */,
+				137A1E2735B46895D73B727F4AC0FF39 /* LastFrameStrikeState.swift */,
+				1E026E217D47498E7DF94322E65B3AF4 /* MissedState.swift */,
+				20760B0BECFAA5AD474A24AE83065899 /* SpareState.swift */,
+				D2EEC554456F0FE80DC2399783EBCA44 /* StrikeState.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		EC8A71FFB19655D0E32C952F20609566 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				88B87F81A3BF3AC01B8D036B985D4732 /* Bowlingure */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		FDD1CC29C2258B19B2470D61C0900086 /* Pods-Bowlingure_Example */ = {
-			isa = PBXGroup;
-			children = (
-				9477C05C796FEF3CA3BA4DC5C6C8CD6F /* Pods-Bowlingure_Example.modulemap */,
-				5C39CF9EA48B0A889E20C46C7DC08436 /* Pods-Bowlingure_Example-acknowledgements.markdown */,
-				598DA05013723F319B49877178020AED /* Pods-Bowlingure_Example-acknowledgements.plist */,
-				035F2FA12BD131E2B41F24988D66C6A9 /* Pods-Bowlingure_Example-dummy.m */,
-				90C930A37A79D95C5555CF052D08A058 /* Pods-Bowlingure_Example-frameworks.sh */,
-				0CA6F9EE71291D368784953DA0FFC060 /* Pods-Bowlingure_Example-Info.plist */,
-				FED83C528FEE592B57D7E3FACB3AD445 /* Pods-Bowlingure_Example-umbrella.h */,
-				64835905478875636F503520B96C0B60 /* Pods-Bowlingure_Example.debug.xcconfig */,
-				038750FA6EF63568878E79C5D45851EC /* Pods-Bowlingure_Example.release.xcconfig */,
-			);
-			name = "Pods-Bowlingure_Example";
-			path = "Target Support Files/Pods-Bowlingure_Example";
+			name = FrameState;
+			path = Bowlingure/Classes/FrameState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		19643D61D235640865A181A978D68337 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A4E4D5924A528191791DFD95FF3B8D /* Bowlingure-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9892C76AFA155FCCDBEF1941371FA83C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,36 +290,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C83D83C36C6BB5803A1CBEE76CE2C0F7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D39EBFC9071B0774DFDDD00EB1ED8B7 /* Bowlingure-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		62174EA62876F7B533A0B9409F4AC158 /* Bowlingure */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 604F1640F27B52AD2F59B983868265C8 /* Build configuration list for PBXNativeTarget "Bowlingure" */;
-			buildPhases = (
-				C83D83C36C6BB5803A1CBEE76CE2C0F7 /* Headers */,
-				78DA8B6E12E54C20EBC14C68C7C86279 /* Sources */,
-				08A72DE29424847E635804B192360026 /* Frameworks */,
-				E0E50A1C3EFDE4CDDCC423C1D1645FB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Bowlingure;
-			productName = Bowlingure;
-			productReference = 7636602D08BEABE7AE138B3351516B0A /* Bowlingure.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B3D5C56C29525EC6767D4B2FDA04E063 /* Pods-Bowlingure_Example */ = {
+		375F5FB091D8C2BCA43E8B188A79432B /* Pods-Bowlingure_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD20A3897238DA4512058CE5D659EAA4 /* Build configuration list for PBXNativeTarget "Pods-Bowlingure_Example" */;
 			buildPhases = (
@@ -333,7 +312,25 @@
 			productReference = 2EBF99DA802C4D38F42E6B5645EB7A4F /* Pods_Bowlingure_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CF86347891C4DDC936F2FC3E72DB7F4D /* Pods-Bowlingure_Tests */ = {
+		7AC54E64EE62B02F7ABDDA740CCB9364 /* Bowlingure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468287A894A782B0AC30B7F8DA1E134E /* Build configuration list for PBXNativeTarget "Bowlingure" */;
+			buildPhases = (
+				19643D61D235640865A181A978D68337 /* Headers */,
+				5A0F2510A98F3A9BCEA840875C941671 /* Sources */,
+				145D14AB68A9CF0D5E024DB51BEFD486 /* Frameworks */,
+				C046E719254F73A9891C25DFDE032316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bowlingure;
+			productName = Bowlingure;
+			productReference = 7636602D08BEABE7AE138B3351516B0A /* Bowlingure.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D451E7B860A898CCE9453A89E8199A24 /* Pods-Bowlingure_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2A740CDE2B20A521C140BD7FB9C34B3 /* Build configuration list for PBXNativeTarget "Pods-Bowlingure_Tests" */;
 			buildPhases = (
@@ -373,9 +370,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				62174EA62876F7B533A0B9409F4AC158 /* Bowlingure */,
-				B3D5C56C29525EC6767D4B2FDA04E063 /* Pods-Bowlingure_Example */,
-				CF86347891C4DDC936F2FC3E72DB7F4D /* Pods-Bowlingure_Tests */,
+				7AC54E64EE62B02F7ABDDA740CCB9364 /* Bowlingure */,
+				375F5FB091D8C2BCA43E8B188A79432B /* Pods-Bowlingure_Example */,
+				D451E7B860A898CCE9453A89E8199A24 /* Pods-Bowlingure_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0E50A1C3EFDE4CDDCC423C1D1645FB5 /* Resources */ = {
+		C046E719254F73A9891C25DFDE032316 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,24 +418,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78DA8B6E12E54C20EBC14C68C7C86279 /* Sources */ = {
+		5A0F2510A98F3A9BCEA840875C941671 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9427F8FBB63E3C04EDE0FC6F60BA0A4 /* Bowlingure-dummy.m in Sources */,
-				34CB15AB46804BD000ED2FCC4572E371 /* EmptyState.swift in Sources */,
-				56D40877E8502B8DC5A966B9331668F9 /* FirstBallRolledState.swift in Sources */,
-				70FFFBE40BE05B595CA927318A6393D0 /* Frame.swift in Sources */,
-				58A791A1A012D44E29A98CC6B240F7D4 /* FrameState.swift in Sources */,
-				2BFDF107AB4560D3A922B0FBD983C063 /* Game.swift in Sources */,
-				434B4871A8E37BE7E9EF795D08A963F6 /* LastFrameStrikeState.swift in Sources */,
-				E8F42CA28575132A81A129A328A294BB /* Math.swift in Sources */,
-				BB37185C8AABA325C462B7886A15E519 /* MissedState.swift in Sources */,
-				39122A9262CD745FA5552A65710C4BF4 /* Scorer.swift in Sources */,
-				E8DE404BA483EE2CD32858820C361679 /* SpareState.swift in Sources */,
-				28C012B589B414AA07C45F73826C5E03 /* StrikeState.swift in Sources */,
-				55AAF12261B2E1102040378B39A92ED4 /* UInt.swift in Sources */,
-				B646D477FF59B0B7392FE49BC9FFD63F /* ViewController.swift in Sources */,
+				5934D50AF575588D3696D67A2DCD68E3 /* Bowlingure-dummy.m in Sources */,
+				B91F643151B6BD2B1BFF8356B6AC6A53 /* EmptyState.swift in Sources */,
+				2CF3E35E46CA48907A6177E76DA02EDF /* FirstBallRolledState.swift in Sources */,
+				30C47AE4E635EAE5A6A5BEF1D9FF3753 /* Frame.swift in Sources */,
+				68D01815DBF35635D3AA3B661E3C0383 /* FrameState.swift in Sources */,
+				36A56C68DE0820287DF4EAED3E35D135 /* Game.swift in Sources */,
+				63157AD4A208BF3F9DCA529697234AB9 /* LastFrameStrikeState.swift in Sources */,
+				110DF6C91B7184BDA3F6A350797374C7 /* Math.swift in Sources */,
+				85417A7AD9754F66AD48CA22EDFB6DEA /* MissedState.swift in Sources */,
+				FBA9F112EB76BD13DA9D7B3C09A1612B /* Scorer.swift in Sources */,
+				32C86B9168ECB291317455F64F04D042 /* SpareState.swift in Sources */,
+				A5E4ED8B21880FCE8ADD836AFCDBCADA /* StrikeState.swift in Sources */,
+				2552A27503405B47E8976B0515F1CF3A /* UInt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,23 +444,25 @@
 		06E2D3F86C57186C9F5D831A4B9C6D27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Bowlingure;
-			target = 62174EA62876F7B533A0B9409F4AC158 /* Bowlingure */;
+			target = 7AC54E64EE62B02F7ABDDA740CCB9364 /* Bowlingure */;
 			targetProxy = 37733B58F7B00EA26D943A6F069F68C7 /* PBXContainerItemProxy */;
 		};
 		CDBC79A8589A51C262B9D0B6BFF46271 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Bowlingure_Example";
-			target = B3D5C56C29525EC6767D4B2FDA04E063 /* Pods-Bowlingure_Example */;
+			target = 375F5FB091D8C2BCA43E8B188A79432B /* Pods-Bowlingure_Example */;
 			targetProxy = 599B8F4FA6A2DF3AE2FC81950E98C4AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		379E896649D91D4FFB54E481A23F9E6A /* Debug */ = {
+		06143CBC52C2E209052D4E1519CF96A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64835905478875636F503520B96C0B60 /* Pods-Bowlingure_Example.debug.xcconfig */;
+			baseConfigurationReference = 6F99B9FDB5DF367101BDFDF7472DA5CD /* Pods-Bowlingure_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -476,7 +474,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Bowlingure_Example/Pods-Bowlingure_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Bowlingure_Example/Pods-Bowlingure_Example.modulemap";
@@ -488,81 +486,19 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4AA929FA5C57A3DD63684A83F1011019 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42BDF9E93D1BBD5E0681B58E7F4D118B /* Bowlingure.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Bowlingure/Bowlingure-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bowlingure/Bowlingure-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Bowlingure/Bowlingure.modulemap";
-				PRODUCT_MODULE_NAME = Bowlingure;
-				PRODUCT_NAME = Bowlingure;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		5D63B9526FBB239A23CFF664EF1AF1BF /* Debug */ = {
+		1408E7B329AF4CEE87E3E37C62F83F76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42BDF9E93D1BBD5E0681B58E7F4D118B /* Bowlingure.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Bowlingure/Bowlingure-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bowlingure/Bowlingure-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Bowlingure/Bowlingure.modulemap";
-				PRODUCT_MODULE_NAME = Bowlingure;
-				PRODUCT_NAME = Bowlingure;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8081D003037D986E9BE95EB3C2191574 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CEE78520151CAA35EC30985DCE73DE0 /* Pods-Bowlingure_Tests.release.xcconfig */;
+			baseConfigurationReference = 696FBDA4CBF6133819081EF7DC32BBA3 /* Pods-Bowlingure_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -574,7 +510,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Bowlingure_Tests/Pods-Bowlingure_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Bowlingure_Tests/Pods-Bowlingure_Tests.modulemap";
@@ -592,7 +528,134 @@
 			};
 			name = Release;
 		};
-		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+		20016BA880CA7E9485F588298DA35D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76AB0536F9CDC417DF7571B572EB5B78 /* Bowlingure.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bowlingure/Bowlingure-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bowlingure/Bowlingure-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bowlingure/Bowlingure.modulemap";
+				PRODUCT_MODULE_NAME = Bowlingure;
+				PRODUCT_NAME = Bowlingure;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4CE281642D6EE9FAB113046B4B6328A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6C1FC45D066089F279742A6A0177B2EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76AB0536F9CDC417DF7571B572EB5B78 /* Bowlingure.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bowlingure/Bowlingure-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bowlingure/Bowlingure-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bowlingure/Bowlingure.modulemap";
+				PRODUCT_MODULE_NAME = Bowlingure;
+				PRODUCT_NAME = Bowlingure;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DFA1578582149B7E24AD55CBA30F07A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -643,7 +706,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -656,11 +719,48 @@
 			};
 			name = Debug;
 		};
-		D8B2804E07564BA1D48A4BC050860B17 /* Debug */ = {
+		E9E908BAD739C7B96E2A39B47C120A8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F156BAA945D7EE7D75EA7464362CC130 /* Pods-Bowlingure_Tests.debug.xcconfig */;
+			baseConfigurationReference = 665436749EF8FFF39067A42BADAC2222 /* Pods-Bowlingure_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bowlingure_Example/Pods-Bowlingure_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bowlingure_Example/Pods-Bowlingure_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEF8F87C552645D757BF8B3E94F47BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A38329840154F8ADEDE9C5539C35B2 /* Pods-Bowlingure_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -672,7 +772,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Bowlingure_Tests/Pods-Bowlingure_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Bowlingure_Tests/Pods-Bowlingure_Tests.modulemap";
@@ -689,117 +789,23 @@
 			};
 			name = Debug;
 		};
-		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		FE265B0C8F039747D5CAA8B4D707B54C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038750FA6EF63568878E79C5D45851EC /* Pods-Bowlingure_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Bowlingure_Example/Pods-Bowlingure_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Bowlingure_Example/Pods-Bowlingure_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		468287A894A782B0AC30B7F8DA1E134E /* Build configuration list for PBXNativeTarget "Bowlingure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
-				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+				20016BA880CA7E9485F588298DA35D15 /* Debug */,
+				6C1FC45D066089F279742A6A0177B2EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		604F1640F27B52AD2F59B983868265C8 /* Build configuration list for PBXNativeTarget "Bowlingure" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D63B9526FBB239A23CFF664EF1AF1BF /* Debug */,
-				4AA929FA5C57A3DD63684A83F1011019 /* Release */,
+				6DFA1578582149B7E24AD55CBA30F07A /* Debug */,
+				4CE281642D6EE9FAB113046B4B6328A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -807,8 +813,8 @@
 		F2A740CDE2B20A521C140BD7FB9C34B3 /* Build configuration list for PBXNativeTarget "Pods-Bowlingure_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8B2804E07564BA1D48A4BC050860B17 /* Debug */,
-				8081D003037D986E9BE95EB3C2191574 /* Release */,
+				FEF8F87C552645D757BF8B3E94F47BCF /* Debug */,
+				1408E7B329AF4CEE87E3E37C62F83F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -816,8 +822,8 @@
 		FD20A3897238DA4512058CE5D659EAA4 /* Build configuration list for PBXNativeTarget "Pods-Bowlingure_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				379E896649D91D4FFB54E481A23F9E6A /* Debug */,
-				FE265B0C8F039747D5CAA8B4D707B54C /* Release */,
+				E9E908BAD739C7B96E2A39B47C120A8D /* Debug */,
+				06143CBC52C2E209052D4E1519CF96A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
