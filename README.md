@@ -22,7 +22,7 @@ pod 'Bowlingure'
 
 ## Author
 
-luc.alexander.sun@me.com, xiangyu.sun@dnata.com
+luc.alexander.sun@me.com
 
 ## License
 
