@@ -1,0 +1,16 @@
+PODS:
+  - Bowlingure (0.1.0)
+
+DEPENDENCIES:
+  - Bowlingure (from `../`)
+
+EXTERNAL SOURCES:
+  Bowlingure:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Bowlingure: fb01cbb569671adb448ffe7dfb6728a99e9d1479
+
+PODFILE CHECKSUM: 775c71a6fd53ee6018002a465ee9a7f5c7e246ec
+
+COCOAPODS: 1.6.1

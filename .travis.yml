@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode10.2
-xcode_project: Bowlingure.xcodeproj
-xcode_scheme: Bowlingure
-xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone X
+script:
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Bowlingure.xcworkspace -scheme Bowlingure-Example -sdk iphonesimulator12.1 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint

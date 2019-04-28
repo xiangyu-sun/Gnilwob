@@ -1,0 +1,22 @@
+{
+  "name": "Bowlingure",
+  "version": "0.1.0",
+  "summary": "A short description of Bowlingure.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/luc.alexander.sun@me.com/Bowlingure",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "luc.alexander.sun@me.com": "luc.alexander.sun@me.com"
+  },
+  "source": {
+    "git": "https://github.com/xiangyu-sun/Gnilwob",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "Bowlingure/Classes/**/*"
+}

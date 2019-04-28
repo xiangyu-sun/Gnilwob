@@ -1,0 +1,6 @@
+framework module Pods_Bowlingure_Tests {
+  umbrella header "Pods-Bowlingure_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

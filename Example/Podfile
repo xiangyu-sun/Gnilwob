@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Bowlingure_Example' do
+  pod 'Bowlingure', :path => '../'
+
+  target 'Bowlingure_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
