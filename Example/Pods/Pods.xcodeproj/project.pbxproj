@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016DFCF40C18E1B37AEB5A92AA8DD534 /* Pods_Bowlingure_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bowlingure_Tests.framework; path = "Pods-Bowlingure_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		016DFCF40C18E1B37AEB5A92AA8DD534 /* Pods_Bowlingure_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bowlingure_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B4D71E5FCB366D6423405E1574B759 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Bowlingure/Classes/Math.swift; sourceTree = "<group>"; };
 		09B614359AABE78870165410713EBACC /* Pods-Bowlingure_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bowlingure_Example-frameworks.sh"; sourceTree = "<group>"; };
 		0D6FD634594DD0D17FB6FB18A72EB543 /* Pods-Bowlingure_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bowlingure_Tests.modulemap"; sourceTree = "<group>"; };
@@ -56,10 +56,10 @@
 		1E026E217D47498E7DF94322E65B3AF4 /* MissedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MissedState.swift; sourceTree = "<group>"; };
 		20760B0BECFAA5AD474A24AE83065899 /* SpareState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpareState.swift; sourceTree = "<group>"; };
 		2C5105FED7420F5A562E6129E5D6E754 /* Bowlingure-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bowlingure-prefix.pch"; sourceTree = "<group>"; };
-		2EBF99DA802C4D38F42E6B5645EB7A4F /* Pods_Bowlingure_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bowlingure_Example.framework; path = "Pods-Bowlingure_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBF99DA802C4D38F42E6B5645EB7A4F /* Pods_Bowlingure_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bowlingure_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4112DBE32BAD65F049C241763B34478D /* Pods-Bowlingure_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bowlingure_Example.modulemap"; sourceTree = "<group>"; };
 		47377B58B0E1A3E83D10403EBA5C2949 /* Bowlingure-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bowlingure-umbrella.h"; sourceTree = "<group>"; };
-		4C2E1B275C8A8592996A14B898BEEBAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C2E1B275C8A8592996A14B898BEEBAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		501E849E35D81F9C0C9CB78BFA1BA0EA /* EmptyState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		584B28D2F67C53C1AE302FA260DC7D03 /* Pods-Bowlingure_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bowlingure_Example-dummy.m"; sourceTree = "<group>"; };
 		61F2E8EB90A1AF6C3DF94886A4661FB4 /* Pods-Bowlingure_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		696FBDA4CBF6133819081EF7DC32BBA3 /* Pods-Bowlingure_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6F99B9FDB5DF367101BDFDF7472DA5CD /* Pods-Bowlingure_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Example.release.xcconfig"; sourceTree = "<group>"; };
 		74104EB58CDDA846C1C29933F69DF487 /* UInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt.swift; path = Bowlingure/Classes/UInt.swift; sourceTree = "<group>"; };
-		745F14A5A167D77AB399C4EB1C9CB499 /* Bowlingure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Bowlingure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7636602D08BEABE7AE138B3351516B0A /* Bowlingure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bowlingure.framework; path = Bowlingure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		745F14A5A167D77AB399C4EB1C9CB499 /* Bowlingure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Bowlingure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7636602D08BEABE7AE138B3351516B0A /* Bowlingure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bowlingure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AB0536F9CDC417DF7571B572EB5B78 /* Bowlingure.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bowlingure.xcconfig; sourceTree = "<group>"; };
 		7854452F090DAB4B643FA2450B5CC6CC /* Scorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scorer.swift; path = Bowlingure/Classes/Scorer.swift; sourceTree = "<group>"; };
 		80A38329840154F8ADEDE9C5539C35B2 /* Pods-Bowlingure_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bowlingure_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		93B521D232FE903E6A46D9814A7E84C1 /* Pods-Bowlingure_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bowlingure_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9980FED119BCD4EBD0061CE78B29DB46 /* FrameState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrameState.swift; sourceTree = "<group>"; };
 		9A45B6ED3991D15ABD8A922E90BC4A05 /* Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frame.swift; path = Bowlingure/Classes/Frame.swift; sourceTree = "<group>"; };
-		9D72FAB85589FC077FEF55C0D84738D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D72FAB85589FC077FEF55C0D84738D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E04EB4AFDA21D6305D3C7C5D49241D7 /* Pods-Bowlingure_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Example-Info.plist"; sourceTree = "<group>"; };
 		C305322A41566ADD934CFCBE75BD8195 /* Pods-Bowlingure_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bowlingure_Tests-Info.plist"; sourceTree = "<group>"; };
 		C9548F3901702C27E6F4A69BFC510988 /* Pods-Bowlingure_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bowlingure_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -251,9 +251,9 @@
 		FA8CC7B1F9C40A6E582A4C4CF54FFB59 /* FrameState */ = {
 			isa = PBXGroup;
 			children = (
+				9980FED119BCD4EBD0061CE78B29DB46 /* FrameState.swift */,
 				501E849E35D81F9C0C9CB78BFA1BA0EA /* EmptyState.swift */,
 				D729A0A496A7835F659E2999AADE52AD /* FirstBallRolledState.swift */,
-				9980FED119BCD4EBD0061CE78B29DB46 /* FrameState.swift */,
 				137A1E2735B46895D73B727F4AC0FF39 /* LastFrameStrikeState.swift */,
 				1E026E217D47498E7DF94322E65B3AF4 /* MissedState.swift */,
 				20760B0BECFAA5AD474A24AE83065899 /* SpareState.swift */,
@@ -363,6 +363,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -581,8 +582,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

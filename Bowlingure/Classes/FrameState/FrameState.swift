@@ -20,6 +20,11 @@ public protocol FrameState {
 }
 
 public extension FrameState {
+    
+    func isFrameCompleted(_ frame: Frame) -> Bool {
+        return false
+    }
+    
     var maximumBallCount: UInt {
         return 2
     }
@@ -45,6 +50,11 @@ public protocol CompleteFrameState: FrameState {}
 public extension CompleteFrameState {
     func isFrameCompleted(_ frame: Frame) -> Bool{
         return true
+    }
+    
+    func addPinsKnockedDown(_ count: UInt, frame: Frame) {
+        guard frame.ballKnockedDownRecord.count < maximumBallCount else { return }
+        frame.addBallKnockedDownRecord(count: count)
     }
 }
 

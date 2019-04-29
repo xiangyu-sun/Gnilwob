@@ -8,8 +8,4 @@
 
 import Foundation
 
-public final class MissedState: CompleteFrameState {
-    public func addPinsKnockedDown(_ count: UInt, frame: Frame) {
-        frame.addBallKnockedDownRecord(count: count)
-    }
-}
+public final class MissedState: CompleteFrameState {}

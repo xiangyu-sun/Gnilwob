@@ -21,8 +21,4 @@ public final class SpareState: CompleteFrameState {
     public var ballsRequiredForScoring: UInt {
         return 3
     }
-
-    public func addPinsKnockedDown(_ count: UInt, frame: Frame) {
-        frame.addBallKnockedDownRecord(count: count)
-    }
 }
