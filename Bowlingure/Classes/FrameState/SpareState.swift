@@ -9,11 +9,11 @@
 import Foundation
 
 public final class SpareState: CompleteFrameState {
-
-    public var ballsForScoring: [UInt]? {
-        var frames = frame?.ballKnockedDownRecord
-        if let firstBallOfNextFrame = frame?.getNextBallKnockedDownRecord(count: 1) {
-            frames?.append(contentsOf: firstBallOfNextFrame)
+    public func ballsForScoring(_ frame: Frame) -> [UInt]? {
+        var frames = frame.ballKnockedDownRecord
+        let firstBallOfNextFrame = frame.getNextBallKnockedDownRecord(count: 1)
+        if !firstBallOfNextFrame.isEmpty {
+            frames.append(contentsOf: firstBallOfNextFrame)
         }
         return frames
     }
@@ -21,14 +21,8 @@ public final class SpareState: CompleteFrameState {
     public var ballsRequiredForScoring: UInt {
         return 3
     }
-    
-    private weak var frame: Frame?
-    
-    public required init(_ frame: Frame) {
-        self.frame = frame
-    }
-    
-    public func addPinsKnockedDown(_ count: UInt) {
-        frame?.addBallKnockedDownRecord(count: count)
+
+    public func addPinsKnockedDown(_ count: UInt, frame: Frame) {
+        frame.addBallKnockedDownRecord(count: count)
     }
 }

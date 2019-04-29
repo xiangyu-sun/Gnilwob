@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
+import Bowlingure
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let frame = Frame()
+        print(frame.state)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

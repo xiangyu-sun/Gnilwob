@@ -8,30 +8,28 @@
 
 import Foundation
 
-public class Frame {
+public final class Frame {
     
     public static let maxiumPinsCount: UInt = 10
     
     private(set) var ballKnockedDownRecord = [UInt]()
     
-    public lazy var state: FrameState = {
-        return EmptyState(self)
-    }()
+    public var state: FrameState
     
     weak var scoringFrame: Frame?
     
     let lastFrame: Bool
 
-    var calcualtedScore: UInt {
-        return state.calcualtedScore
+    public var calcualtedScore: UInt {
+        return state.calcualtedScore(self)
     }
     
-    var isCompleted: Bool {
-        return state.isFrameCompleted
+    public var isCompleted: Bool {
+        return state.isFrameCompleted(self)
     }
     
-    var isCompletelyScored: Bool {
-       return state.canBeScored
+    public var isCompletelyScored: Bool {
+       return state.canBeScored(self)
     }
     
     var pinsLeft: UInt {
@@ -40,10 +38,11 @@ public class Frame {
     
     public init(lastFrame: Bool = false) {
         self.lastFrame = lastFrame
+        self.state = EmptyState()
     }
     
     public func addPinsKnockedDown(_ count: UInt) {
-        state.addPinsKnockedDown(count)
+        state.addPinsKnockedDown(count, frame: self)
     }
     
     func addBallKnockedDownRecord(count: UInt) {
@@ -70,18 +69,18 @@ public class Frame {
     }
     
     func getFirstBallRolledState() -> FrameState {
-        return FirstBallRolledState(self)
+        return FirstBallRolledState()
     }
     
     func getStrikeState() -> FrameState {
-        return lastFrame ? FinalFrameStrikeState(self) : StrikeState(self)
+        return lastFrame ? FinalFrameStrikeState() : StrikeState()
     }
     
     func getSpareState() -> FrameState {
-        return lastFrame ? FinalFrameSpareState(self) : SpareState(self)
+        return lastFrame ? FinalFrameSpareState() : SpareState()
     }
     
     func getMissedState() -> FrameState {
-        return MissedState(self)
+        return MissedState()
     }
 }

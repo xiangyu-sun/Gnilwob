@@ -8,27 +8,17 @@
 
 import Foundation
 
-public class EmptyState: FrameState {
-
-    public var ballsForScoring: [UInt]? {
-        return nil
-    }
-    
-    
-    public var isFrameCompleted: Bool {
+public final class EmptyState: FrameState {
+    public func isFrameCompleted(_ frame: Frame) -> Bool {
         return false
     }
     
-    private weak var frame: Frame?
-    
-    public required init(_ frame: Frame) {
-        self.frame = frame
+    public func ballsForScoring(_ frame: Frame) -> [UInt]? {
+        return nil
     }
     
-    public func addPinsKnockedDown(_ count: UInt) {
-        if let frame = frame{
-            frame.state = count == Frame.maxiumPinsCount ? frame.getStrikeState() : frame.getFirstBallRolledState()
-            frame.state.addPinsKnockedDown(count)
-        }
+    public func addPinsKnockedDown(_ count: UInt, frame: Frame) {
+        frame.state = count == Frame.maxiumPinsCount ? frame.getStrikeState() : frame.getFirstBallRolledState()
+        frame.state.addPinsKnockedDown(count, frame: frame)
     }
 }

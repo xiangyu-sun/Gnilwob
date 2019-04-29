@@ -3,7 +3,8 @@
   "version": "0.1.1",
   "summary": "A simple Bowling framework",
   "swift_versions": [
-    "4.2"
+    "4.2",
+    "5.0"
   ],
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xiangyu-sun/Gnilwob",

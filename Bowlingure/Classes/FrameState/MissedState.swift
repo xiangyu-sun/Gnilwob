@@ -9,18 +9,7 @@
 import Foundation
 
 public final class MissedState: CompleteFrameState {
-
-    public var ballsForScoring: [UInt]? {
-        return frame?.ballKnockedDownRecord
-    }
-    
-    private weak var frame: Frame?
-    
-    public required init(_ frame: Frame) {
-        self.frame = frame
-    }
-    
-    public func addPinsKnockedDown(_ count: UInt) {
-        frame?.addBallKnockedDownRecord(count: count)
+    public func addPinsKnockedDown(_ count: UInt, frame: Frame) {
+        frame.addBallKnockedDownRecord(count: count)
     }
 }
