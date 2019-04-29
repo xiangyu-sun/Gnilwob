@@ -9,30 +9,20 @@
 import Foundation
 
 public final class FirstBallRolledState: FrameState {
-    
-    public var ballsForScoring: [UInt]? {
-        return frame?.ballKnockedDownRecord
-    }
-    
-    public var isFrameCompleted: Bool {
+
+    public func isFrameCompleted(_ frame: Frame) -> Bool {
         return false
     }
     
-    private weak var frame: Frame?
-    
-    public required init(_ frame: Frame) {
-        self.frame = frame
-    }
-    
-    public func addPinsKnockedDown(_ count: UInt) {
-        if frame?.ballKnockedDownRecord.count == 0 {
-            frame?.addBallKnockedDownRecord(count: count)
-        } else if count == frame?.pinsLeft, let state = frame?.getSpareState(){
-            frame?.state = state
-            frame?.state.addPinsKnockedDown(count)
-        } else if let state: FrameState = frame?.getMissedState(){
-            frame?.state = state
-            frame?.state.addPinsKnockedDown(count)
+    public func addPinsKnockedDown(_ count: UInt, frame: Frame) {
+        if frame.ballKnockedDownRecord.count == 0 {
+            frame.addBallKnockedDownRecord(count: count)
+        } else if count == frame.pinsLeft  {
+            frame.state = frame.getSpareState()
+            frame.state.addPinsKnockedDown(count, frame: frame)
+        } else {
+            frame.state = frame.getMissedState()
+            frame.state.addPinsKnockedDown(count, frame: frame)
         }
     }
 }
